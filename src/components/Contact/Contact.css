@@ -1,0 +1,98 @@
+.main-contact-div {
+    margin-top: 110px;
+    background-color: #f5f5f5; /* Light background */
+    padding: 40px 0;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-icon {
+    width: 100px; /* Size of the image */
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header h1 {
+    font-size: 32px;
+    color: #004fab; /* Blue color for the header */
+    margin: 0;
+  }
+  
+  .contact-header p {
+    font-size: 16px;
+    color: #333; /* Grey for the subtext */
+  }
+  
+  .contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .name-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea.form-control {
+    resize: none;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff0077;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #e60065;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+  

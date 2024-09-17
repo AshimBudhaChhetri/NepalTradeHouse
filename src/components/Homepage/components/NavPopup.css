@@ -1,0 +1,33 @@
+
+
+.nav-popup .nav-link {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-popup .nav-link:hover,
+  .nav-popup .nav-link.active-nav-link {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .modal-content {
+    border-radius: 8px;
+
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #007bff;
+  }
+  

@@ -1,0 +1,116 @@
+/* Container for the entire content switcher */
+.content-switcher {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main navbar styling */
+.navbar-gallery {
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Box styling around the navbar */
+.navbar-box {
+    border:none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Button styling for default state */
+.navbar-gallery button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white; /* Default button background */
+    color: black; /* Default text color */
+    border: none;
+    border-radius: 0px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+    font-weight: 500; /* Medium font weight for normal state */
+    font-family: "Oswald", sans-serif;
+    font-size: 19px;
+}
+
+/* Active button styling */
+.navbar-gallery button.active {
+    background-color: #da2140; /* Reddish background for active button */
+    color: white; /* White text for active button */
+    font-weight: 600; /* Slightly bolder text for active button */
+}
+
+/* Hover effect for all buttons */
+.navbar-gallery button:hover {
+    background-color: #da2140; /* Light grey background on hover */
+    color: white; /* Black text color on hover */
+}
+
+/* Content container */
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Flex items for content */
+.content > div {
+    flex: 1;
+}
+
+/* Styling for content images */
+.content-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* Text overlay styling */
+.content-text {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 767px)  {
+
+
+    .navbar-gallery button {
+        margin: 0 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        background-color: white; /* Default button background */
+        color: black; /* Default text color */
+        border: none;
+        border-radius: 0px; /* Rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+        font-weight: 500; /* Medium font weight for normal state */
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+    }
+    
+    /* Active button styling */
+    .navbar-gallery button.active {
+        background-color: #da2140; /* Reddish background for active button */
+        color: white; /* White text for active button */
+        font-weight: 600; /* Slightly bolder text for active button */
+    }
+    
+    /* Hover effect for all buttons */
+    .navbar-gallery button:hover {
+        background-color: #da2140; /* Light grey background on hover */
+        color: white; /* Black text color on hover */
+    }
+    
+
+
+}

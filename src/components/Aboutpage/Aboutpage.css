@@ -1,0 +1,104 @@
+.outer-div-aboutpage {
+   
+    margin: 120px;
+   
+    padding: 0px;
+  }
+  
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tab-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .tab-item.active {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    color: #fff;
+  }
+  
+  .tab-text {
+    color: inherit;
+    text-transform: uppercase;
+  }
+  
+  .content-area {
+    display: flex;
+    align-items: stretch;
+    gap: 0px;
+    background-color: none;
+    border-radius: 8px;
+    padding: 0px;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Full shadow effect, including top */
+  }
+  
+  
+  
+  .content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 40px; /* Adjust padding as needed */
+  
+  }
+  
+  .content-title {
+    font-family: "Yeseva One", serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .content-description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .content-list {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content-list-item {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .content-list-item::before {
+    content: '✔'; /* Unicode for a checkmark */
+    position: absolute;
+    left: 0;
+    color: #ff6b6b; /* Set the desired color */
+    font-size: 18px; /* Adjust the size if needed */
+  }
+  
+  
+  .img-fluid {
+    
+    width: 50%;
+    object-fit: cover;
+    height: 500px; /* Ensures the image matches the content height */
+    border-radius: 8px;
+  }
+  

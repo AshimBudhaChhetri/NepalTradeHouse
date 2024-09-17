@@ -1,0 +1,991 @@
+.about-main-div {
+    background-image: url('');
+    background-size: 60%; /* Adjust the percentage to control the size of the image */
+    background-position: center 320px; /* Adjust the vertical position */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Ensure the div has some width and height */
+    height: 130vh;
+    padding-top: 200px;
+     /* You can set this to any height you need */
+}
+
+.outer-about {
+    /* Add any specific styles you need for this class */
+}
+
+.about-div {
+    border: 2px solid red;
+}
+
+.title-about {
+    padding-top: 10px;
+    font-family: "Yeseva One", serif;
+    font-size: 50px;
+    color:  rgb(27, 27, 160);;
+    padding-bottom:10px ;
+}
+
+.title-about-span {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+   
+  
+}
+
+.text-about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    word-spacing: 7px;
+  
+    
+}
+
+.about-content {
+  
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+ 
+}
+
+.col-md-7 {
+    /* Add any specific styles you need for this class */
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 4px solid red;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.small-box {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border: 10px solid gray;
+}
+
+.large-box {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 10px solid rgb(37, 37, 151);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../../../about-img2.webp'); /* Replace with your image path */
+    background-size:100%; /* Compress the image horizontally */
+    background-position: center; /* Align the image to the left */
+    background-repeat: no-repeat;
+}
+
+.top-left {
+    top: 5%;
+    left: 14%;
+    border: 10px solid rgb(205, 202, 202);
+    background-image: url('../../../about-img1.webp'); /* Replace with your image path */
+    background-size:100%; /* Compress the image horizontally */
+    background-position: center; /* Align the image to the left */
+    background-repeat: no-repeat;
+
+}
+
+.bottom-right {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(20%);
+    background-image: url('../../../about-img3.webp'); /* Replace with your image path */
+    background-size:100%; /* Compress the image horizontally */
+    background-position: center; /* Align the image to the left */
+    background-repeat: no-repeat;
+}
+
+.half-div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-top: 20px solid rgb(37, 37, 151);
+    border-right: 20px solid rgb(37, 37, 151);
+    top: 8%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-more-about {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+
+.box-1 {
+    height: 25px;
+    width: 280px;
+    background-color: rgb(37, 37, 151);
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.box-2 {
+    height: 25px;
+    width: 300px;
+    background-color: rgb(144, 144, 242);
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.box-3 {
+    height: 25px;
+    width: 300px;
+    background-color: rgb(37, 37, 151);
+    border-radius: 20px;
+    margin-top: 115px;
+    float: right;
+   margin-right: 20px;
+}
+
+.box-4 {
+    height: 25px;
+    width: 300px;
+    background-color: rgb(144, 144, 242);
+    border-radius: 20px;
+    margin-top: 0px;
+    float: right;
+   margin-right: -223px;
+   margin-top: 50px;
+}
+
+
+
+
+.button-Aboutus {
+
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 30px;
+    border: 1px solid red;
+
+}
+
+.About-span {
+
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+
+    .about-main-div {
+        background-image: url('');
+        background-size: 60%; /* Adjust the percentage to control the size of the image */
+        background-position: center 320px; /* Adjust the vertical position */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; /* Ensure the div has some width and height */
+        height:auto;
+        padding-top: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+         /* You can set this to any height you need */
+    }
+    
+    .outer-about {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .about-div {
+        border: 2px solid red;
+    }
+    
+    .title-about {
+        padding-top: 10px;
+        font-family: "Yeseva One", serif;
+        font-size: 50px;
+        color:  rgb(27, 27, 160);;
+        padding-bottom:10px ;
+    }
+    
+    .title-about-span {
+        font-family: "Yeseva One", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+       
+      
+    }
+    
+    .text-about {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        word-spacing: 7px;
+      
+        
+    }
+    
+    .about-content {
+      
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+     
+    }
+    
+    .col-md-7 {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .main-container {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        border: 2px solid red;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .small-box {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 10px solid gray;
+    }
+    
+    .large-box {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        border: 5px solid rgb(37, 37, 151);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../../../about-img2.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .top-left {
+        top: 0%;
+        left: 0%;
+        border: 5px solid rgb(205, 202, 202);
+        background-image: url('../../../about-img1.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    
+    }
+    
+    .bottom-right {
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(20%);
+        background-image: url('../../../about-img3.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .half-div {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-top: 10px solid rgb(37, 37, 151);
+        border-right: 10px solid rgb(37, 37, 151);
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .learn-more-about {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 500;
+        color: red;
+    }
+    
+    
+    .box-1 {
+        height: 17px;
+        width: 200px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-left: 0px;
+        margin-bottom: -30px;
+    }
+    .box-2 {
+        height: 17px;
+        width: 200px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .box-3 {
+        height: 17px;
+        width: 200px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-top: 80px;
+        float: right;
+       margin-right: 20px;
+    }
+    
+    .box-4 {
+        height: 17px;
+        width: 200px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+
+        float: right;
+       margin-right: -227px;
+       margin-top: 110px;
+    }
+    
+    
+    
+    
+    .button-Aboutus {
+    
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 30px;
+        border: 1px solid red;
+    
+    }
+    
+    .About-span {
+    
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: red;
+    }
+    
+    
+
+}
+
+
+@media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) { 
+
+
+    .about-main-div {
+        background-image: url('');
+        background-size: 60%; /* Adjust the percentage to control the size of the image */
+        background-position: center 320px; /* Adjust the vertical position */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; /* Ensure the div has some width and height */
+        height: 130vh;
+        padding-top: 100px;
+         /* You can set this to any height you need */
+    }
+    
+    .outer-about {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .about-div {
+        border: 2px solid red;
+
+    }
+    
+    .title-about {
+        padding-top: 10px;
+        font-family: "Yeseva One", serif;
+        font-size: 50px;
+        color:  rgb(27, 27, 160);;
+        padding-bottom:10px ;
+    }
+    
+    .title-about-span {
+        font-family: "Yeseva One", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+       
+      
+    }
+    
+    .text-about {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        word-spacing: 7px;
+      
+        
+    }
+    
+    .about-content {
+      
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+     
+    }
+    
+    .col-md-7 {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .main-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        border: 4px solid red;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .small-box {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        border: 10px solid gray;
+    }
+    
+    .large-box {
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        border: 10px solid rgb(37, 37, 151);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../../../about-img2.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .top-left {
+        top: 0%;
+        left: 0%;
+        border: 10px solid rgb(205, 202, 202);
+        background-image: url('../../../about-img1.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    
+    }
+    
+    .bottom-right {
+        bottom: 0%;
+        left: 47.5%;
+        transform: translateX(20%);
+        background-image: url('../../../about-img3.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .half-div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-top: 20px solid rgb(37, 37, 151);
+        border-right: 20px solid rgb(37, 37, 151);
+        top: 8%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .learn-more-about {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 500;
+        color: red;
+    }
+    
+    
+    .box-1 {
+        height: 25px;
+        width: 280px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    .box-2 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .box-3 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-top: 115px;
+        float: right;
+       margin-right: 20px;
+    }
+    
+    .box-4 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 0px;
+        float: right;
+       margin-right: -223px;
+       margin-top: 50px;
+    }
+    
+    
+    
+    
+    .button-Aboutus {
+    
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 30px;
+        border: 1px solid red;
+        margin-bottom: 30px;
+    
+    }
+    
+    .About-span {
+    
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: red;
+    }
+    
+    
+
+
+
+
+ }
+
+
+ @media only screen 
+and (min-device-width: 818px) 
+and (max-device-width: 824px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .about-main-div {
+        background-image: url('');
+        background-size: 60%; /* Adjust the percentage to control the size of the image */
+        background-position: center 320px; /* Adjust the vertical position */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; /* Ensure the div has some width and height */
+        height: 130vh;
+        padding-top: 200px;
+         /* You can set this to any height you need */
+    }
+    
+    .outer-about {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .about-div {
+        border: 2px solid red;
+    }
+    
+    .title-about {
+        padding-top: 10px;
+        font-family: "Yeseva One", serif;
+        font-size: 50px;
+        color:  rgb(27, 27, 160);;
+        padding-bottom:10px ;
+    }
+    
+    .title-about-span {
+        font-family: "Yeseva One", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+       
+      
+    }
+    
+    .text-about {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        word-spacing: 7px;
+      
+        
+    }
+    
+    .about-content {
+      
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+     
+    }
+    
+    .col-md-7 {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .main-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        border: 4px solid red;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .small-box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 10px solid gray;
+    }
+    
+    .large-box {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 10px solid rgb(37, 37, 151);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../../../about-img2.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .top-left {
+        top: 5%;
+        left: -0%;
+        border: 10px solid rgb(205, 202, 202);
+        background-image: url('../../../about-img1.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    
+    }
+    
+    .bottom-right {
+        bottom: 5%;
+        right: -20%;
+        transform: translateX(-3%);
+        background-image: url('../../../about-img3.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .half-div {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-top: 17px solid rgb(37, 37, 151);
+        border-right: 17px solid rgb(37, 37, 151);
+        top: 10%;
+        left: 100%;
+        transform: translate(-70%, -60%);
+    }
+    
+    .learn-more-about {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 500;
+        color: red;
+    }
+    
+    
+    .box-1 {
+        height: 25px;
+        width: 280px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    .box-2 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .box-3 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-top: 115px;
+        float: right;
+       margin-right: 20px;
+    }
+    
+    .box-4 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 0px;
+        float: right;
+       margin-right: -223px;
+       margin-top: 50px;
+    }
+    
+    
+    
+    
+    .button-Aboutus {
+    
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border: 1px solid red;
+    
+    }
+    
+    .About-span {
+    
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: red;
+    }
+    
+    
+}
+
+@media only screen 
+and (min-device-width: 1178px) 
+and (max-device-width: 1182px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .about-main-div {
+        background-image: url('');
+        background-size: 60%; /* Adjust the percentage to control the size of the image */
+        background-position: center 320px; /* Adjust the vertical position */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; /* Ensure the div has some width and height */
+        height: 130vh;
+        padding-top: 200px;
+         /* You can set this to any height you need */
+    }
+    
+    .outer-about {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .about-div {
+        border: 2px solid red;
+    }
+    
+    .title-about {
+        padding-top: 10px;
+        font-family: "Yeseva One", serif;
+        font-size: 50px;
+        color:  rgb(27, 27, 160);;
+        padding-bottom:10px ;
+    }
+    
+    .title-about-span {
+        font-family: "Yeseva One", serif;
+        font-weight: 400;
+        font-style: normal;
+    
+       
+      
+    }
+    
+    .text-about {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        word-spacing: 7px;
+      
+        
+    }
+    
+    .about-content {
+      
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+     
+    }
+    
+    .col-md-7 {
+        /* Add any specific styles you need for this class */
+    }
+    
+    .main-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        border: 4px solid red;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .small-box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 10px solid gray;
+    }
+    
+    .large-box {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 10px solid rgb(37, 37, 151);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../../../about-img2.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .top-left {
+        top: 5%;
+        left: -0%;
+        border: 10px solid rgb(205, 202, 202);
+        background-image: url('../../../about-img1.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    
+    }
+    
+    .bottom-right {
+        bottom: 5%;
+        right: -20%;
+        transform: translateX(30%);
+        background-image: url('../../../about-img3.webp'); /* Replace with your image path */
+        background-size:100%; /* Compress the image horizontally */
+        background-position: center; /* Align the image to the left */
+        background-repeat: no-repeat;
+    }
+    
+    .half-div {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-top: 17px solid rgb(37, 37, 151);
+        border-right: 17px solid rgb(37, 37, 151);
+        top: 10%;
+        left: 100%;
+        transform: translate(-50%, -60%);
+    }
+    
+    .learn-more-about {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 500;
+        color: red;
+    }
+    
+    
+    .box-1 {
+        height: 25px;
+        width: 280px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    .box-2 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .box-3 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(37, 37, 151);
+        border-radius: 20px;
+        margin-top: 115px;
+        float: right;
+       margin-right: 20px;
+    }
+    
+    .box-4 {
+        height: 25px;
+        width: 300px;
+        background-color: rgb(144, 144, 242);
+        border-radius: 20px;
+        margin-top: 0px;
+        float: right;
+       margin-right: -223px;
+       margin-top: 50px;
+    }
+    
+    
+    
+    
+    .button-Aboutus {
+    
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border: 1px solid red;
+    
+    }
+    
+    .About-span {
+    
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: red;
+    }
+    
+    
+}

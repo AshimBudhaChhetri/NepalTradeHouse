@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+.footer {
+  
+  background-color: #be1f3a;
+  color: #ffffff;
+}
+
+.footer-logo {
+
+  height: 100px;
+
+}
+
+.footer-logo-img {
+  margin-top: -50px;
+  width: 200px;
+  height: 200px;
+  filter: invert(300%);
+  
+
+}
+
+.footer-company-name,
+.footer-address,
+.footer-phone {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-title {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-links {
+  padding: 0;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.footer-useful-links {
+  font-size: 19px;
+  color: #ffffff;
+
+}
+
+.footer-useful-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+  
+}
+
+.footer-useful-links a:hover {
+  text-decoration: none;
+  color: orange;
+}
