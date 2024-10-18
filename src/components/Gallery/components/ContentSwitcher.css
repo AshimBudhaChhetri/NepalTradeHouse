@@ -1,116 +1,487 @@
-/* Container for the entire content switcher */
+/* Content Switcher Layout */
 .content-switcher {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 110px;
 }
 
-/* Main navbar styling */
-.navbar-gallery {
-    position: sticky;
-    bottom: 0;
-    top: 0;
-    background-color: transparent;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
+.container-fluid {
+  padding: 0 !important;
 }
 
-/* Box styling around the navbar */
-.navbar-box {
-    border:none;
-    padding-top: 0px;
-    padding-bottom: 0px;
+.row.no-gutters-content {
+  margin-right: 0;
+  margin-left: 0;
 }
 
-/* Button styling for default state */
-.navbar-gallery button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: white; /* Default button background */
-    color: black; /* Default text color */
-    border: none;
-    border-radius: 0px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
-    font-weight: 500; /* Medium font weight for normal state */
-    font-family: "Oswald", sans-serif;
-    font-size: 19px;
+.product-title {
+  margin-bottom: 40px;
 }
-
-/* Active button styling */
-.navbar-gallery button.active {
-    background-color: #da2140; /* Reddish background for active button */
-    color: white; /* White text for active button */
-    font-weight: 600; /* Slightly bolder text for active button */
-}
-
-/* Hover effect for all buttons */
-.navbar-gallery button:hover {
-    background-color: #da2140; /* Light grey background on hover */
-    color: white; /* Black text color on hover */
-}
-
-/* Content container */
-.content {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-}
-
-/* Flex items for content */
-.content > div {
-    flex: 1;
-}
-
-/* Styling for content images */
-.content-image {
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-}
-
-/* Text overlay styling */
 .content-text {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  background-color: rgba(6, 6, 162, 0.8);
+  font-family: "Yeseva One", serif;
+  color: white;
+  text-align: center;
 }
 
+.content-bg {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
 
-@media (max-width: 767px)  {
+/* Card Styling */
+.card-container {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  padding: 20px;
+}
 
+.card-container.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 
-    .navbar-gallery button {
-        margin: 0 10px;
-        padding: 10px 15px;
-        cursor: pointer;
-        background-color: white; /* Default button background */
-        color: black; /* Default text color */
-        border: none;
-        border-radius: 0px; /* Rounded corners */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
-        font-weight: 500; /* Medium font weight for normal state */
-        font-family: "Oswald", sans-serif;
-        font-size: 15px;
-    }
-    
-    /* Active button styling */
-    .navbar-gallery button.active {
-        background-color: #da2140; /* Reddish background for active button */
-        color: white; /* White text for active button */
-        font-weight: 600; /* Slightly bolder text for active button */
-    }
-    
-    /* Hover effect for all buttons */
-    .navbar-gallery button:hover {
-        background-color: #da2140; /* Light grey background on hover */
-        color: white; /* Black text color on hover */
-    }
-    
+.card-desc {
+  border: 1px solid red;
+  padding: 20px;
+  background-color: white;
+  padding-right: 30px;
+  height: 320px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
+.product-img-div {
+  text-align: center;
+}
 
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title-prod {
+  color: #004fab;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.bg-random {
+  position: absolute;
+  height: 690px;
+  top: -200px;
+  z-index: -1;
+}
+
+.button-gallery {
+  background-color: white;
+  border: 2px solid #da2140;
+  color: #da2140;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button-gallery:hover {
+  background-color: #da2140;
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar-gallery {
+  position: sticky;
+  bottom: 0;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.view-products-btn {
+  background-color: white;
+  border: 2px solid #da2140;
+  color: #da2140;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.view-products-btn:hover {
+  background-color: #da2140;
+  color: white;
+}
+/* Modal Styling */
+/* Modal Styling */
+.category-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.category-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 300px;
+  position: relative; /* To position the close button inside */
+}
+
+.category-modal-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px; /* Reduced padding for smaller width */
+  background-color: #da2140;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%; /* Adjusted width for a sleeker look */
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.category-modal-button:hover {
+  background-color: #c2182b;
+  transform: scale(1.05);
+}
+
+.category-modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-modal-close-btn:hover {
+  transform: scale(1.2);
+  color: #da2140;
+}
+
+.loading-news {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-news {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Class to apply blur effect when loading */
+
+@media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
+  .content-switcher {
+    margin-top: 110px;
+  }
+
+  .content-text {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .content-bg {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .card-desc {
+    padding: 15px;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .product-img-div {
+    margin-bottom: 20px;
+
+    margin-top: 30px;
+  }
+
+  .product-img {
+    height: 270px;
+    width: 200px;
+  }
+
+  .card-title-prod {
+    font-size: 24px;
+  }
+
+  .bg-random {
+    height: 350px;
+    top: -100px;
+  }
+
+  .button-gallery {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .navbar-gallery {
+    padding: 5px;
+  }
+
+  .view-products-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .modal-sticky-desc-content {
+    padding: 15px;
+    max-width: 320px;
+  }
+
+  .modal-sticky-desc-content button {
+    padding: 8px 15px;
+  }
+
+  .modal-sticky-desc-close-btn {
+    padding: 6px 12px;
+  }
+}
+
+/* ipad pro */
+@media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Content Switcher Layout */
+  .content-switcher {
+    margin-top: 110px;
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .row.no-gutters-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .content-text {
+    padding: 20px;
+    background-color: rgba(6, 6, 162, 0.8);
+    font-family: "Yeseva One", serif;
+    color: white;
+    text-align: center;
+  }
+
+  .content-bg {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container {
+    flex-direction: row; /* Align items in a row by default */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .card-container.flex-row-reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternating cards */
+  }
+
+  .card-desc {
+    flex: 1; /* Allow the card description to take up remaining space */
+    padding: 20px;
+    background-color: white;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .product-img-div {
+    flex: 0 0 300px; /* Set a fixed width for the image container */
+    text-align: right; /* Align the image container to the right */
+    margin: 0 20px; /* Add some margin for spacing */
+  }
+
+  .product-img {
+    width: 130%;
+    height: 500px;
+    max-height: 300px; /* Keep a consistent image height */
+    object-fit: cover; /* Cover the image without distortion */
+  }
+
+  .card-title-prod {
+    font-size: 28px; /* Adjust font size for better readability */
+  }
+
+  .bg-random {
+    height: 650px; /* Adjust the height of the background image */
+    top: -190px; /* Adjust positioning for better alignment */
+  }
+}
+
+/* ipad air */
+@media only screen and (min-device-width: 818px) and (max-device-width: 824px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Content Switcher Layout */
+  .content-switcher {
+    margin-top: 110px;
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .row.no-gutters-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .content-text {
+    padding: 20px;
+    background-color: rgba(6, 6, 162, 0.8);
+    font-family: "Yeseva One", serif;
+    color: white;
+    text-align: center;
+  }
+
+  .content-bg {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container {
+    flex-direction: row; /* Align items in a row by default */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .card-container.flex-row-reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternating cards */
+  }
+
+  .card-desc {
+    flex: 1; /* Allow the card description to take up remaining space */
+    padding: 20px;
+    background-color: white;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .product-img-div {
+    flex: 0 0 300px; /* Set a fixed width for the image container */
+    text-align: right; /* Align the image container to the right */
+    margin: 0 20px; /* Add some margin for spacing */
+  }
+
+  .product-img {
+    width: 130%;
+    height: 500px;
+    max-height: 300px; /* Keep a consistent image height */
+    object-fit: cover; /* Cover the image without distortion */
+  }
+
+  .card-title-prod {
+    font-size: 28px; /* Adjust font size for better readability */
+  }
+
+  .bg-random {
+    height: 550px; /* Adjust the height of the background image */
+    top: -140px; /* Adjust positioning for better alignment */
+  }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 770px) and (orientation: portrait) {
+  .content-switcher {
+    margin-top: 110px;
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .row.no-gutters-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .content-text {
+    padding: 20px;
+    background-color: rgba(6, 6, 162, 0.8);
+    font-family: "Yeseva One", serif;
+    color: white;
+    text-align: center;
+  }
+
+  .content-bg {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-container {
+    flex-direction: row; /* Align items in a row by default */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .card-container.flex-row-reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternating cards */
+  }
+
+  .card-desc {
+    flex: 1; /* Allow the card description to take up remaining space */
+    padding: 20px;
+    background-color: white;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .product-img-div {
+    flex: 0 0 300px; /* Set a fixed width for the image container */
+    text-align: right; /* Align the image container to the right */
+    margin: 0 20px; /* Add some margin for spacing */
+  }
+
+  .product-img {
+    width: 130%;
+    height: 500px;
+    max-height: 300px; /* Keep a consistent image height */
+    object-fit: cover; /* Cover the image without distortion */
+  }
+
+  .card-title-prod {
+    font-size: 28px; /* Adjust font size for better readability */
+  }
+
+  .bg-random {
+    height: 500px; /* Adjust the height of the background image */
+    top: -150px; /* Adjust positioning for better alignment */
+  }
 }

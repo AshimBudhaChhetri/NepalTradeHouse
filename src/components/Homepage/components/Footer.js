@@ -1,9 +1,14 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Logo from '../../../logoo.png'; // Update with your logo path
-import './Footer.css'; // Optional CSS for additional styling
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import Logo from "../../../logoo.png"; // Update with your logo path
+import "./Footer.css"; // Optional CSS for additional styling
 
 const Footer = () => {
   return (
@@ -32,7 +37,7 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/cs" className="footer-link">
+                <NavLink to="/aboutpage" className="footer-link">
                   About Us
                 </NavLink>
               </li>
@@ -41,19 +46,15 @@ const Footer = () => {
                   Our Products
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/cs" className="footer-link">
-                  Our Services
-                </NavLink>
-              </li>
+
               <li>
                 <NavLink to="/contact" className="footer-link">
                   Contact Us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/cs" className="footer-link">
-                  Blog
+                <NavLink to="/newsevent" className="footer-link">
+                  News & Event
                 </NavLink>
               </li>
             </ul>
@@ -103,7 +104,8 @@ const Footer = () => {
         <Row>
           <Col className="text-center">
             <p className="m-0">
-              &copy; {new Date().getFullYear()} Powered By ANRIKA. All rights reserved.
+              &copy; {new Date().getFullYear()} Powered By ANRIKA. All rights
+              reserved.
             </p>
           </Col>
         </Row>
@@ -112,11 +114,22 @@ const Footer = () => {
         <Row>
           <Col className="text-center mt-3">
             <p className="footer-useful-links">
-              Other useful links: 
-              <a href="https://nepalifecare.org" target="_blank" rel="noopener noreferrer" className="footer-link">
+              Other useful links:
+              <a
+                href="https://nepalifecare.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
                 Nepalifecare.org
-              </a> | 
-              <a href="https://diwalipalace.nl" target="_blank" rel="noopener noreferrer" className="footer-link">
+              </a>{" "}
+              |
+              <a
+                href="https://diwalipalace.nl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
                 Diwalipalace.nl
               </a>
             </p>

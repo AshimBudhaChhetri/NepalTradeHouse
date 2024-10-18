@@ -1,0 +1,91 @@
+.hero-dropdown-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch; /* Ensure columns are the same height */
+  padding: 10px;
+}
+
+.hero-dropdown-column {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ddd; /* Add border between columns */
+}
+
+.hero-dropdown-column:last-child {
+  border-right: none; /* Remove the border on the last column */
+}
+
+.hero-images-column {
+  display: flex;
+  flex-wrap: wrap; /* Ensure images wrap onto new lines */
+}
+
+/* Adjust images and align text below */
+.hero-dropdown-image-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  text-align: center;
+  width: 80px; /* Restrict the width of each item */
+  margin-bottom: 15px; /* Space between items */
+  margin-right: 15px; /* Space between items horizontally */
+}
+
+/* Circular images with smaller size */
+.hero-dropdown-image {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Make image circular */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 5px; /* Space between image and title */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.hero-dropdown-image:hover {
+  transform: scale(1.1); /* Scale the image slightly */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+/* Circular images with smaller size */
+
+/* Style for hero-dropdown-item */
+.hero-dropdown-item {
+  padding: 5px 0;
+  font-size: 16px; /* Reduce the font size for compact display */
+  cursor: pointer;
+}
+
+/* Style for the active item */
+.hero-dropdown-item.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Adjust title style */
+.hero-dropdown-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-dropdown-title.active {
+  background-color: #f0f0f0;
+  color: #007bff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Overall styling adjustments */
+.sticky-dropdown-menu {
+  display: flex;
+  flex-wrap: wrap; /* Allow image items to wrap onto new lines */
+  padding: 10px;
+}
+
+/* Limit the width of the dropdown to prevent it from becoming too wide */
+.sticky-dropdown {
+  max-width: 300px;
+  margin: 0 auto;
+}

@@ -32,149 +32,53 @@
   height: 220px;
   padding-left: 80px;
   padding-right: 80px;
-
 }
 
-
-
-
-
-
-.buttons-tc {
-  margin-top: 20px;
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: blue;
-  font-size: 28px;
-  animation: blink-animation 1.5s infinite;
-  z-index: 1000;
-}
-
-.product-arrow {
-  background-color: black;
-}
-
-.scroll-indicator .arrow {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid blue;
-  margin: 5px auto;
-  animation: arrow-blink 1s infinite;
-}
-
-.card-style-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Card Layout */
+.card-container-tc {
+  position: relative;
   margin-top: 100px;
-  margin-bottom: 100px;
-
+  margin-bottom: 150px;
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  background-color: none;
 }
-
-.card-left {
-  width: 70%;
-  border: 1px solid red;
+.card-desc {
+  border:1px solid red;
+  padding-top: 20px;
+  height: 250px;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 15px;
   background-color: white;
-
 }
 
 
+/* Image Styling */
+.tc-prod-img-card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text styling for card */
 .card-title-prod {
   color: #004fab;
-}
-
-.card-category {
-  margin-bottom: 6px;
-}
-
-.card-text-prod {
-  margin-top: 20px;
-}
-.card-right {
-  
-}
-
-.img-div-card-tc {
-
-  display: flex;
-}
-
-.tc-prod-img-card {
-  
-  height: 340px;
-}
-.tccan-prod-img-card {
-  position: absolute;
-  height: 260px;
-
-  margin-top: 10%;
-  margin-left: -40px;
-  
-  
-  
-
-}
-
-.tccan-prod1-img-card {
-  
-  height: 260px;
-  background-color: rebeccapurple;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .bg-random-tc {
   position: absolute;
-  top: 115%;
-  height: 700px;
- left: 8%;
+  height: 650px;
+
+  top: -200px;
   z-index: -1;
 }
 
-.bg-random-tc2 {
-  position: absolute;
-  top: 175%;
-  height: 700px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc3 {
-  position: absolute;
-  top: 240%;
-  height: 700px;
-  left: 8%;
-  z-index: -1;
-}
-.bg-random-tc4 {
-  position: absolute;
-  top: 300%;
-  height: 720px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc5 {
-  position: absolute;
-  top: 360%;
-  height: 720px;
-  left: 8%;
-  z-index: -1;
-}
-.bg-random-tc6 {
-  position: absolute;
-  top: 425%;
-  height: 720px;
-  right: 8%;
-  z-index: -1;
+.button-gallery {
+  border-radius: 10px;
+  background-color: white;
 }
 
 @keyframes blink-animation {
@@ -209,7 +113,7 @@ ipad pro portrait */
   
   .row.no-gutters-tc {
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right:0px;
     margin-left: 0px;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -217,191 +121,22 @@ ipad pro portrait */
   
   .content-text-tc {
     padding: 20px;
+    text-align: center;
     background-color: rgba(6, 6, 162, 0.8);
     color: white;
     position: relative;
     transition: all 0.3s ease-in-out;
-    height: 1100px;
+    height: 85vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
   }
   
   .tc-bg {
-    height: 1100px;
+    height: 85vh;
     width: 100%;
   }
   
-  .image-logo-tc {
-    width: 100%;
-    height: 220px;
-    padding-left: 0px;
-    padding-right: 0px;
   
-  }
-  
-  
-  
-  
-  
-  
-  .buttons-tc {
-    margin-top: 20px;
-  }
-  
-  .scroll-indicator {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: blue;
-    font-size: 28px;
-    animation: blink-animation 1.5s infinite;
-    z-index: 1000;
-  }
-  
-  .product-arrow {
-    background-color: black;
-  }
-  
-  .scroll-indicator .arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid blue;
-    margin: 5px auto;
-    animation: arrow-blink 1s infinite;
-  }
-  
-  .card-style-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  
-  }
-  
-  .card-left {
-    width: 70%;
-    border: 1px solid red;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    background-color: white;
-  
-  }
-  
-  
-  .card-title-prod {
-    color: #004fab;
-  }
-  
-  .card-category {
-    margin-bottom: 6px;
-  }
-  
-  .card-text-prod {
-    margin-top: 20px;
-  }
-  .card-right {
-    
-  }
-  
-  .img-div-card-tc {
-  
-    display: flex;
-  }
-  
-  .tc-prod-img-card {
-    
-    height: 380px;
-  }
-  .tccan-prod-img-card {
-    position: absolute;
-    height: 260px;
-  
-    margin-top: 10%;
-    margin-left: -40px;
-    
-    
-    
-  
-  }
-  
-  .tccan-prod1-img-card {
-    
-    height: 260px;
-    background-color: rebeccapurple;
-  }
-  
-
-  
-  @keyframes blink-animation {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes arrow-blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .bg-random-tc {
-    position: absolute;
-    top: 82%;
-    height: 700px;
-   left: -20%;
-    z-index: -1;
-  }
-  
-  .bg-random-tc2 {
-    position: absolute;
-    top: 115%;
-    height: 700px;
-    right: 8%;
-    z-index: -1;
-  }
-  .bg-random-tc3 {
-    position: absolute;
-    top: 152%;
-    height: 700px;
-    left: -20%;
-    z-index: -1;
-  }
-  .bg-random-tc4 {
-    position: absolute;
-    top: 185%;
-    height: 720px;
-    right: 8%;
-    z-index: -1;
-  }
-  .bg-random-tc5 {
-    position: absolute;
-    top: 222%;
-    height: 720px;
-    left: -20%;
-    z-index: -1;
-  }
-  .bg-random-tc6 {
-    position: absolute;
-    top: 255%;
-    height: 720px;
-    right: 8%;
-    z-index: -1;
-  }
-  
-
 }
 
 @media only screen 
@@ -410,8 +145,6 @@ and (max-device-width: 824px)
 and (orientation: portrait) 
 and (-webkit-min-device-pixel-ratio: 2) { 
 
-
-  
   .container-fluid {
     padding: 0 !important;
   }
@@ -426,198 +159,74 @@ and (-webkit-min-device-pixel-ratio: 2) {
   
   .content-text-tc {
     padding: 20px;
+    text-align: center;
     background-color: rgba(6, 6, 162, 0.8);
     color: white;
     position: relative;
     transition: all 0.3s ease-in-out;
-    height: 1100px;
-    font-size: 12px;
-    height: 1000px;
+    height: 120vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
   }
   
   .tc-bg {
-    height: 1000px;
+    height: 120vh;
     width: 100%;
-
   }
-  
   .image-logo-tc {
     width: 100%;
     height: 220px;
     padding-left: 0px;
     padding-right: 0px;
-  
   }
   
-  
-  
-  
-  
-  
-  .buttons-tc {
-    margin-top: 20px;
-  }
-  
-  .scroll-indicator {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: blue;
-    font-size: 28px;
-    animation: blink-animation 1.5s infinite;
-    z-index: 1000;
-  }
-  
-  .product-arrow {
-    background-color: black;
-  }
-  
-  .scroll-indicator .arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid blue;
-    margin: 5px auto;
-    animation: arrow-blink 1s infinite;
-  }
-  
-  .card-style-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  
-  }
-  
-  .card-left {
-    width: 70%;
-    border: 1px solid red;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    background-color: white;
-  
-  }
-  
-  
-  .card-title-prod {
-    color: #004fab;
-  }
-  
-  .card-category {
-    margin-bottom: 6px;
-  }
-  
-  .card-text-prod {
-    margin-top: 20px;
-  }
-  .card-right {
-    
-  }
-  
-  .img-div-card-tc {
-  
-    display: flex;
-  }
-  
-  .tc-prod-img-card {
-    
-    height: 380px;
-  }
-  .tccan-prod-img-card {
-    position: absolute;
-    height: 260px;
-  
-    margin-top: 10%;
-    margin-left: -40px;
-    
-    
-    
-  
-  }
-  
-  .tccan-prod1-img-card {
-    
-    height: 260px;
-    background-color: rebeccapurple;
-  }
-  
+/* Card Layout */
+.card-container-tc {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  background-color: none;
+}
+.card-desc {
+  border:1px solid red;
+  padding-top: 20px;
 
-  
-  @keyframes blink-animation {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes arrow-blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
+  height: 250px;
+  padding-left: 20px;
+  background-color: white;
+}
 
-  .bg-random-tc {
-    position: absolute;
-    top: 86%;
-    height: 700px;
-   left: -20%;
-    z-index: -1;
-  }
-  
-  .bg-random-tc2 {
-    position: absolute;
-    top: 123%;
-    height: 700px;
-    right: 8%;
-    z-index: -1;
-  }
-  .bg-random-tc3 {
-    position: absolute;
-    top: 166%;
-    height: 700px;
-    left: -20%;
-    z-index: -1;
-  }
-  .bg-random-tc4 {
-    position: absolute;
-    top: 200%;
-    height: 720px;
-    right: 8%;
-    z-index: -1;
-  }
-  .bg-random-tc5 {
-    position: absolute;
-    top: 242%;
-    height: 720px;
-    left: -20%;
-    z-index: -1;
-  }
-  .bg-random-tc6 {
-    position: absolute;
-    top: 285%;
-    height: 720px;
-    right: 8%;
-    z-index: -1;
-  }
-  
 
+/* Image Styling */
+.tc-prod-img-card {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
 
 }
 
-/* ipad air landscape */
+/* Text styling for card */
+.card-title-prod {
+  color: #004fab;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bg-random-tc {
+  position: absolute;
+  height: 620px;
+
+  top: -200px;
+  z-index: -1;
+}
+  
+
+}
+
 
 @media only screen 
 and (min-device-width: 1178px) 
@@ -627,55 +236,82 @@ and (-webkit-min-device-pixel-ratio: 2)
 
 {
     
-.row.no-gutters-tc {
-  margin-top: 0px;
-  margin-right: -0px;
-  margin-left: -0px;
+  .container-fluid {
+    padding: 0 !important;
+  }
+  
+  .row.no-gutters-tc {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .content-text-tc {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 120vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+  
+  .tc-bg {
+    height: 120vh;
+    width: 100%;
+  }
+  .image-logo-tc {
+    width: 100%;
+    height: 220px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+/* Card Layout */
+.card-container-tc {
   position: relative;
-  transition: all 0.3s ease-in-out;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  background-color: none;
+}
+.card-desc {
+  border:1px solid red;
+  padding-top: 20px;
+
+  height: 250px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+
+/* Image Styling */
+.tc-prod-img-card {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* Text styling for card */
+.card-title-prod {
+  color: #004fab;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .bg-random-tc {
   position: absolute;
-  top: 120%;
-  height: 700px;
- left: -20%;
-  z-index: -1;
-}
+  height: 620px;
 
-.bg-random-tc2 {
-  position: absolute;
-  top: 170%;
-  height: 700px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc3 {
-  position: absolute;
-  top: 225%;
-  height: 700px;
-  left: -20%;
-  z-index: -1;
-}
-.bg-random-tc4 {
-  position: absolute;
-  top: 275%;
-  height: 720px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc5 {
-  position: absolute;
-  top: 330%;
-  height: 720px;
-  left: -20%;
-  z-index: -1;
-}
-.bg-random-tc6 {
-  position: absolute;
-  top: 380%;
-  height: 720px;
-  right: 8%;
+  top: -200px;
   z-index: -1;
 }
 
@@ -686,64 +322,42 @@ and (-webkit-min-device-pixel-ratio: 2)
 
 @media only screen and (min-width: 1364px) and (max-width: 1367px) and (orientation: landscape) { 
 
-
+  .container-fluid {
+    padding: 0 !important;
+  }
   
-.row.no-gutters-tc {
-  margin-top: 0px;
-  margin-right: -75px;
-  margin-left: -80px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-
-.bg-random-tc {
-  position: absolute;
-  top: 110%;
-  height: 700px;
- left: -20%;
-  z-index: -1;
-}
-
-.bg-random-tc2 {
-  position: absolute;
-  top: 150%;
-  height: 700px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc3 {
-  position: absolute;
-  top: 198%;
-  height: 700px;
-  left: -20%;
-  z-index: -1;
-}
-.bg-random-tc4 {
-  position: absolute;
-  top: 240%;
-  height: 720px;
-  right: 8%;
-  z-index: -1;
-}
-.bg-random-tc5 {
-  position: absolute;
-  top: 280%;
-  height: 720px;
-  left: -20%;
-  z-index: -1;
-}
-.bg-random-tc6 {
-  position: absolute;
-  top: 325%;
-  height: 720px;
-  right: 8%;
-  z-index: -1;
-}
+  .row.no-gutters-tc {
+    margin-top: 0px;
+    margin-right:-75px;
+    margin-left: -75px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .content-text-tc {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 85vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+  
+  .tc-bg {
+    height: 85vh;
+    width: 100%;
+  }
+  
+  
 
 
 }
 
 
+/* mobile responsive */ 
 @media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
 
   .row.no-gutters-tc {
@@ -755,8 +369,6 @@ and (-webkit-min-device-pixel-ratio: 2)
   }
 
   .tc-bg {
-  
- 
     height:50vh;
     width: 100%;
   }
@@ -764,106 +376,39 @@ and (-webkit-min-device-pixel-ratio: 2)
   
 .bg-random-tc {
   position: absolute;
-  top: 95%;
+  top: -30%;
   height: 400px;
-  right: 40%;
+  right: 20%;
   z-index: -1;
 }
 
-.bg-random-tc2 {
-  position: absolute;
-  top: 195%;
-  height: 400px;
-  right: 10%;
-  z-index: -1;
-}
-.bg-random-tc3 {
-  position: absolute;
-  top: 296%;
-  height: 400px;
-  right: 40%;
-  z-index: -1;
-}
-.bg-random-tc4 {
-  position: absolute;
-  top: 296%;
-  height: 400px;
-  right: 40%;
-  z-index: -1;
-}
-.bg-random-tc5 {
-  position: absolute;
-  top: 296%;
-  height: 400px;
-  right: 40%;
-  z-index: -1;
-}
-.card-style-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 
-}
-
-.card-left {
-  width: 70%;
-  border: 1px solid red;
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  background-color: white;
-
-}
-
-
-.card-title-prod {
-  color: #004fab;
-}
-
-.card-category {
-  margin-bottom: 6px;
-}
-
-.card-text-prod {
-  margin-top: 20px;
-}
-.card-right {
-  
-}
-
-.img-div-card-tc {
-
-  display: flex;
-}
 
 .tc-prod-img-card {
   
-  height: 220px;
-}
-.tccan-prod-img-card {
-  position: absolute;
-  height: 180px;
-
-  margin-top: 15%;
-  margin-left: -30px;
-  
-  
-  
-
+  height: 200px;
+  width: 300px;
 }
 
-.tccan-prod1-img-card {
-  
-  height: 190px;
-  background-color: rebeccapurple;
-}
+
 
 .cor-img {
-  display: none
-  ;
+  display: none;
 }
 
+.card-desc {
+  margin-bottom: 50px;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 765px) and (max-width: 770px) and (orientation: portrait) { 
+
+  
+
+
+  
 }

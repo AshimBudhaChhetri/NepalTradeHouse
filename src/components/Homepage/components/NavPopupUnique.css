@@ -1,0 +1,45 @@
+/* Scope all styles to .nav-popup-unique */
+.nav-popup-unique .nav-link {
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  text-align: center; /* Center text */
+  display: block;     /* Ensure it behaves as a block-level element */
+  transition: color 0.3s ease;
+}
+
+.nav-popup-unique .nav-link:hover,
+.nav-popup-unique .nav-link.active-nav-link-unique {
+  color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.modal-content-unique {
+  border-radius: 8px;
+}
+
+.modal-header-unique {
+  border-bottom: none;
+}
+
+.modal-title-unique {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+/* Center the items within the modal */
+.nav-popup-unique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Align items in the center */
+  justify-content: center;  /* Vertically center them */
+}
+
+.nav-popup-unique .nav-link {
+  margin: 5px 0; /* Add some margin between links */
+  width: 100%;   /* Make the links take full width */
+  max-width: 120px; /* Optional: Limit the width */
+}

@@ -1,441 +1,89 @@
 .container-fluid {
-    padding: 0 !important;
-  }
-  
-  .row.no-gutters-khukri {
-    margin-top: 0px;
-    margin-right: -159px;
-    margin-left: -160px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .content-text-khukri {
-  
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(6, 6, 162, 0.8);
-    color: white;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    height: auto;
-    font-family: "Yeseva One", serif;
-    font-size: 15px;
-  }
-  
-  .khukri-bg {
-    height: 100vh;
-    width: 100%;
-
-  }
-  
-  .image-logo-khukri {
-    width: 100%;
-    height: 160px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-bottom: 30px;
-  
-  }
-  
-  
-  
-  
-  
-  
-  .buttons-khukri {
-    margin-top: 20px;
-  }
-  
-  .scroll-indicator {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: blue;
-    font-size: 28px;
-    animation: blink-animation 1.5s infinite;
-    z-index: 1000;
-  }
-  
-  .product-arrow {
-    background-color: black;
-  }
-  
-  .scroll-indicator .arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid blue;
-    margin: 5px auto;
-    animation: arrow-blink 1s infinite;
-  }
-  
-  .card-style-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  
-  }
-  
-  .card-left {
-    width: 70%;
-    border: 1px solid red;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    background-color: white;
-  
-  }
-  
-  
-  .card-title-prod {
-    color: #004fab;
-  }
-  
-  .card-category {
-    margin-bottom: 6px;
-  }
-  
-  .card-text-prod {
-    margin-top: 20px;
-  }
-  .card-right {
-    
-  }
-  
-  .img-div-card-khukri {
-  
-    display: flex;
-  }
-  
-  .khukri-prod-img-card {
-    
-    height: 380px;
-  }
-  .khukrican-prod-img-card {
-    position: absolute;
-    height: 260px;
-  
-    margin-top: 10%;
-    margin-left: -40px;
-    
-    
-    
-  
-  }
-  
-  .khukri-prod1-img-card {
-    
-    height: 260px;
-    background-color: rebeccapurple;
-  }
-  
-  .bg-random-khukri {
-    position: absolute;
-    top: 100%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  
-  .bg-random-khukri2 {
-    position: absolute;
-    top: 163%;
-    height: 780px;
-    right: 10%;
-    z-index: -1;
-  }
-  .bg-random-khukri3 {
-    position: absolute;
-    top: 235%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  .bg-random-khukri4 {
-    position: absolute;
-    top: 305%;
-    height: 780px;
-    right: 10%;
-    z-index: -1;
-  }
-  @keyframes blink-animation {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes arrow-blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
-
-  /* ipad pro portrait */
-  @media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) { 
-
-    .container-fluid {
-      padding: 0 !important;
-    }
-    
-    .row.no-gutters-khukri {
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-left: 0px;
-      position: relative;
-      transition: all 0.3s ease-in-out;
-    }
-    
-    .content-text-khukri {
-      padding: 20px;
-      background-color: rgba(6, 6, 162, 0.8);
-      color: white;
-      position: relative;
-      transition: all 0.3s ease-in-out;
-      height: 1100px;
-      }
-    
-    .khukri-bg {
-      height: 1100px;
-      width: 100%;
-    }
-    
-    .image-logo-khukri {
-      width: 100%;
-      height: 220px;
-      padding-left: 0px;
-      padding-right: 0px;
-      margin-bottom: 50px;
-  
-    
-    }
-  
-    
-    .buttons-khukri {
-      margin-top: 20px;
-    }
-    
-    .scroll-indicator {
-      position: absolute;
-      bottom: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      color: blue;
-      font-size: 28px;
-      animation: blink-animation 1.5s infinite;
-      z-index: 1000;
-    }
-    
-    .product-arrow {
-      background-color: black;
-    }
-    
-    .scroll-indicator .arrow {
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 15px solid blue;
-      margin: 5px auto;
-      animation: arrow-blink 1s infinite;
-    }
-    
-    .card-style-1 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 100px;
-      margin-bottom: 100px;
-    
-    }
-    
-    .card-left {
-      width: 70%;
-      border: 1px solid red;
-      padding-left: 20px;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      padding-right: 15px;
-      background-color: white;
-    
-    }
-    
-    
-    .card-title-prod {
-      color: #004fab;
-    }
-    
-    .card-category {
-      margin-bottom: 6px;
-    }
-    
-    .card-text-prod {
-      margin-top: 20px;
-    }
-    .card-right {
-      
-    }
-    
-    .img-div-card-khukri {
-    
-      display: flex;
-    }
-    
-    .khukri-prod-img-card {
-      
-      height: 380px;
-    }
-    .khukrican-prod-img-card {
-      position: absolute;
-      height: 260px;
-    
-      margin-top: 10%;
-      margin-left: -40px;
-      
-      
-      
-    
-    }
-    
-    .khukri-prod1-img-card {
-      
-      height: 260px;
-      background-color: rebeccapurple;
-    }
-    
- 
-    
-    @keyframes blink-animation {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-    }
-    
-    @keyframes arrow-blink {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-    }
-    
-
-    .bg-random-khukri {
-      position: absolute;
-      top: 80%;
-      height: 780px;
-      right: 40%;
-      z-index: -1;
-    }
-    
-    .bg-random-khukri2 {
-      position: absolute;
-      top: 113%;
-      height: 780px;
-      right: 1%;
-      z-index: -1;
-    }
-    .bg-random-khukri3 {
-      position: absolute;
-      top: 150%;
-      height: 780px;
-      right: 40%;
-      z-index: -1;
-    }
-    .bg-random-khukri4 {
-      position: absolute;
-      top: 185%;
-      height: 780px;
-      right: 1%;
-      z-index: -1;
-    }
-  }
-
-
-  /* ipad pro landscape */
-@media only screen and (min-width: 1364px) and (max-width: 1367px) and (orientation: landscape) { 
-
-
-  .row.no-gutters-khukri {
-    margin-top: 0px;
-    margin-right: -75px;
-    margin-left: -80px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .bg-random-khukri {
-    position: absolute;
-    top: 95%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  
-  .bg-random-khukri2 {
-    position: absolute;
-    top: 138%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-  .bg-random-khukri3 {
-    position: absolute;
-    top: 189%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  .bg-random-khukri4 {
-    position: absolute;
-    top: 235%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-  
-
+  padding: 0 !important;
 }
 
+.row.no-gutters-khukri {
+  margin-top: 0;
+  margin-right: -159px;
+  margin-left: -160px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
 
+.content-text-khukri {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(6, 6, 162, 0.8);
+  color: white;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  height: auto;
+  font-family: "Yeseva One", serif;
+  font-size: 15px;
+}
 
-  /* ipad air portrait */
-  @media only screen 
-and (min-device-width: 818px) 
-and (max-device-width: 824px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 2) { 
+.khukri-bg {
+  height: 100vh;
+  width: 100%;
+}
 
+.image-logo-khukri {
+  width: 100%;
+  height: 220px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 30px;
+}
 
+/* Card Layout */
+.card-container-khukri {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding: 20px;
+  background-color: none;
+}
 
+.card-desc-khukri {
+  border: 1px solid red;
+  padding: 20px;
+  background-color: white;
+}
 
+.khukri-prod-img-card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+/* Text styling for card */
+.card-title-prod {
+  color: #004fab;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.bg-random-khukri {
+  position: absolute;
+  height: 740px;
+  top: -220px;
+  z-index: -1;
+}
+
+.button-gallery {
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* 
+ipad pro portrait */
+
+@media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
   .container-fluid {
     padding: 0 !important;
   }
-  
+
   .row.no-gutters-khukri {
     margin-top: 0px;
     margin-right: 0px;
@@ -443,194 +91,112 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: relative;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .content-text-khukri {
     padding: 20px;
+    text-align: center;
     background-color: rgba(6, 6, 162, 0.8);
     color: white;
     position: relative;
     transition: all 0.3s ease-in-out;
-    height: 1000px;
-    font-size: 13px
-    }
-  
+    height: 85vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+
   .khukri-bg {
-    height: 1000px;
+    height: 85vh;
     width: 100%;
   }
-  
+}
+
+/* ipad air portrait */
+
+@media only screen and (min-device-width: 818px) and (max-device-width: 824px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .row.no-gutters-khukri {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-text-khukri {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 80vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+
+  .khukri-bg {
+    height: 80vh;
+    width: 100%;
+  }
+
   .image-logo-khukri {
     width: 100%;
     height: 220px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-bottom: 50px;
-
-  
   }
 
-  
-  .buttons-khukri {
-    margin-top: 20px;
-  }
-  
-  .scroll-indicator {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: blue;
-    font-size: 28px;
-    animation: blink-animation 1.5s infinite;
-    z-index: 1000;
-  }
-  
-  .product-arrow {
-    background-color: black;
-  }
-  
-  .scroll-indicator .arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid blue;
-    margin: 5px auto;
-    animation: arrow-blink 1s infinite;
-  }
-  
-  .card-style-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* Card Layout */
+  .card-container-khukri {
+    position: relative;
     margin-top: 100px;
-    margin-bottom: 100px;
-  
+    margin-bottom: 150px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: none;
   }
-  
-  .card-left {
-    width: 70%;
+
+  .card-desc-khukri {
     border: 1px solid red;
+    padding-top: 20px;
     padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 15px;
     background-color: white;
-  
   }
-  
-  
+
+  /* Image Styling */
+  .khukri-prod-img-card {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Text styling for card */
   .card-title-prod {
     color: #004fab;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
   }
-  
-  .card-category {
-    margin-bottom: 6px;
-  }
-  
-  .card-text-prod {
-    margin-top: 20px;
-  }
-  .card-right {
-    
-  }
-  
-  .img-div-card-khukri {
-  
-    display: flex;
-  }
-  
-  .khukri-prod-img-card {
-    
-    height: 380px;
-  }
-  .khukrican-prod-img-card {
-    position: absolute;
-    height: 260px;
-  
-    margin-top: 10%;
-    margin-left: -40px;
-    
-    
-    
-  
-  }
-  
-  .khukri-prod1-img-card {
-    
-    height: 260px;
-    background-color: rebeccapurple;
-  }
-  
-
-  
-  @keyframes blink-animation {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes arrow-blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  
 
   .bg-random-khukri {
     position: absolute;
-    top: 80%;
-    height: 780px;
-    right: 40%;
+    height: 600px;
+    top: -150px;
     z-index: -1;
   }
-  
-  .bg-random-khukri2 {
-    position: absolute;
-    top: 119%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-  .bg-random-khukri3 {
-    position: absolute;
-    top: 160%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  .bg-random-khukri4 {
-    position: absolute;
-    top: 208%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-
-
 }
-
 
 /* ipad air landscape */
 
-@media only screen 
-and (min-device-width: 1178px) 
-and (max-device-width: 1182px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (min-device-width: 1178px) and (max-device-width: 1182px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .container-fluid {
+    padding: 0 !important;
+  }
 
-
-
-{
   .row.no-gutters-khukri {
     margin-top: 0px;
     margin-right: 0px;
@@ -639,44 +205,108 @@ and (-webkit-min-device-pixel-ratio: 2)
     transition: all 0.3s ease-in-out;
   }
 
+  .content-text-khukri {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 120vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+
+  .khukri-bg {
+    height: 120vh;
+    width: 100%;
+  }
+
+  .image-logo-khukri {
+    width: 100%;
+    height: 220px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* Card Layout */
+  .card-container-khukri {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: none;
+  }
+
+  .card-desc {
+    border: 1px solid red;
+    padding-top: 20px;
+    height: 250px;
+    padding-left: 20px;
+    background-color: white;
+  }
+
+  /* Image Styling */
+  .khukri-prod-img-card {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Text styling for card */
+  .card-title-prod {
+    color: #004fab;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
   .bg-random-khukri {
     position: absolute;
-    top: 95%;
-    height: 780px;
-    right: 40%;
+    height: 620px;
+    top: -200px;
     z-index: -1;
   }
-  
-  .bg-random-khukri2 {
-    position: absolute;
-    top: 149%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-  .bg-random-khukri3 {
-    position: absolute;
-    top: 210%;
-    height: 780px;
-    right: 40%;
-    z-index: -1;
-  }
-  .bg-random-khukri4 {
-    position: absolute;
-    top: 265%;
-    height: 780px;
-    right: 1%;
-    z-index: -1;
-  }
-  
-  
-
-
 }
 
+/* ipad pro landscape */
+
+@media only screen and (min-width: 1364px) and (max-width: 1367px) and (orientation: landscape) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .row.no-gutters-khukri {
+    margin-top: 0px;
+    margin-right: -75px;
+    margin-left: -75px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-text-khukri {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 85vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
+
+  .khukri-bg {
+    height: 85vh;
+    width: 100%;
+  }
+}
+
+/* mobile responsive */
 
 @media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
-
   .row.no-gutters-khukri {
     margin-top: 0px;
     margin-right: 0px;
@@ -686,101 +316,102 @@ and (-webkit-min-device-pixel-ratio: 2)
   }
 
   .khukri-bg {
-  
- 
-    height: 75vh;
+    height: 50vh;
     width: 100%;
   }
 
-  
-.bg-random-ice {
-  position: absolute;
-  top: 95%;
-  height: 790px;
-  right: 40%;
-  z-index: -1;
+  .bg-random-khukri {
+    position: absolute;
+    top: -30%;
+    height: 800px;
+    right: 20%;
+    z-index: -1;
+  }
+
+  .khukri-prod-img-card {
+    display: flex;
+    height: 300px;
+    width: 200px;
+  }
+
+  .cor-img {
+    display: none;
+  }
+
+  .card-desc-khukri {
+    margin-bottom: 50px;
+  }
 }
 
-.bg-random-ice2 {
-  position: absolute;
-  top: 195%;
-  height: 790px;
-  right: 10%;
-  z-index: -1;
-}
-.bg-random-ice3 {
-  position: absolute;
-  top: 296%;
-  height: 790px;
-  right: 40%;
-  z-index: -1;
-}
-.card-style-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+/* Specific portrait responsive for a certain range */
 
-}
+@media only screen and (min-width: 765px) and (max-width: 770px) and (orientation: portrait) {
+  .container-fluid {
+    padding: 0 !important;
+  }
 
-.card-left {
-  width: 70%;
-  border: 1px solid red;
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  background-color: white;
+  .row.no-gutters-khukri {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
 
-}
+  .content-text-khukri {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(6, 6, 162, 0.8);
+    color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: 120vh;
+    font-family: "Yeseva One", serif;
+    font-size: 15px;
+  }
 
+  .khukri-bg {
+    height: 120vh;
+    width: 100%;
+  }
 
-.card-title-prod {
-  color: #004fab;
-}
+  .image-logo-khukri {
+    width: 100%;
+    height: 220px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-.card-category {
-  margin-bottom: 6px;
-}
+  /* Card Layout */
+  .card-container-khukri {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: none;
+  }
 
-.card-text-prod {
-  margin-top: 20px;
-}
-.card-right {
-  
-}
+  .card-desc {
+    border: 1px solid red;
+    padding-top: 20px;
+    height: 250px;
+    padding-left: 20px;
+    background-color: white;
+  }
 
-.img-div-card-khukri {
+  /* Image Styling */
+  .khukri-prod-img-card {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
 
-  display: flex;
-}
-
-.khukri-prod-img-card {
-  
-  height: 220px;
-}
-.khukrican-prod-img-card {
-  position: absolute;
-  height: 180px;
-
-  margin-top: 15%;
-  margin-left: -30px;
-  
-  
-  
-
-}
-
-.khukrican-prod1-img-card {
-  
-  height: 190px;
-  background-color: rebeccapurple;
-}
-
-.cor-img {
-  display: none
-  ;
-}
-
+  .bg-random-khukri {
+    position: absolute;
+    height: 620px;
+    top: -200px;
+    z-index: -1;
+  }
 }

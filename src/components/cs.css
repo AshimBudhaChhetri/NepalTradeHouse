@@ -21,3 +21,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
 }
+
+@media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
+
+
+    .cs-title {
+        font-size: 80px;
+        font-family: "Yeseva One", sans-serif;
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    
+
+
+
+
+}

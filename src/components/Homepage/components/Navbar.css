@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .main-banner {
   position: relative;
   height: 100vh; /* Full height */
@@ -34,12 +34,8 @@
 }
 
 .carousel-caption {
-
-
   position: absolute;
   top: 0%;
-
-
 
   color: white; /* Text color */
   z-index: 2; /* Ensure it appears above the carousel */
@@ -58,33 +54,29 @@
 }
 
 .hero-text h1 {
-  
   font-size: 65px;
 }
 
 /* Overlay image common styles */
-.carousel-overlay-image1  {
+.carousel-overlay-image1 {
   position: absolute;
   bottom: 80px; /* Adjust the bottom offset as needed */
   right: 40px; /* Adjust the right offset as needed */
-   /* Adjust to center vertically */
+  /* Adjust to center vertically */
   width: 400px; /* Adjust the width as needed */
   height: 320px; /* Maintain aspect ratio */
   z-index: 1;
-
-
 }
 
-.carousel-overlay-image2  {
+.carousel-overlay-image2 {
   position: absolute;
   bottom: 80px; /* Adjust the bottom offset as needed */
   right: 140px; /* Adjust the right offset as needed */
-   /* Adjust to center vertically */
+  /* Adjust to center vertically */
   width: 300px; /* Adjust the width as needed */
   height: 310px;
- /* Maintain aspect ratio */
+  /* Maintain aspect ratio */
   z-index: 1;
-
 }
 
 .carousel-overlay-image2 .overlay-image-2 {
@@ -95,12 +87,11 @@
   position: absolute;
   bottom: 80px; /* Adjust the bottom offset as needed */
   right: 140px; /* Adjust the right offset as needed */
-   /* Adjust to center vertically */
+  /* Adjust to center vertically */
   width: 300px; /* Adjust the width as needed */
   height: 310px;
- /* Maintain aspect ratio */
+  /* Maintain aspect ratio */
   z-index: 1;
-
 }
 
 .carousel-overlay-image3 .overlay-image-3 {
@@ -112,20 +103,17 @@
   position: absolute;
   bottom: 80px; /* Adjust the bottom offset as needed */
   right: 140px; /* Adjust the right offset as needed */
-   /* Adjust to center vertically */
+  /* Adjust to center vertically */
   width: 300px; /* Adjust the width as needed */
   height: 310px;
- /* Maintain aspect ratio */
+  /* Maintain aspect ratio */
   z-index: 1;
-
 }
 
 .carousel-overlay-image4 .overlay-image-4 {
   height: 250px;
   width: 300px;
 }
-
-
 
 .navbar-hero {
   width: 100%;
@@ -137,14 +125,11 @@
   bottom: 0;
   z-index: 10;
   transition: all 0.3s ease;
-
-  
-
 }
 .navbar-hero::before {
   content: "";
   position: absolute;
-  bottom:  0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 150px;
@@ -188,7 +173,7 @@
 
 .navbar-brand {
   display: flex;
-  
+
   font-size: 70px;
   font-weight: bold;
   color: rgb(6, 6, 162);
@@ -200,14 +185,10 @@
 }
 
 .logoimg {
-
   height: 200px;
   width: 200px;
   transition: all 0.3s ease;
   margin-left: 0px;
-
-  
-  
 }
 
 .sticky-logo-img {
@@ -220,7 +201,7 @@
   display: flex;
   align-items: center;
   gap: 40px; /* Add spacing between nav links */
-  font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+  font-family: "Oswald", sans-serif; /* Font family for all nav links */
   font-size: 17px;
   margin-left: 80px;
   font-weight: 600;
@@ -236,7 +217,7 @@
 .nav-link {
   color: #000000 !important; /* Default color */
   background-color: rebeccapurple; /* Default background color */
-  width: 98px;
+  width: 115px;
   text-align: center;
   transition: background-color 0.3s ease; /* Smooth transition */
   border-radius: 5px; /* Add rounded corners */
@@ -261,7 +242,6 @@
   margin-top: 40px; /* Margin for sticky navbar items */
 }
 
-
 /* Style for the custom dropdown content with three columns */
 .custom-dropdown-content {
   display: flex;
@@ -282,7 +262,6 @@
   font-family: "Oswald", sans-serif;
   padding: 10px;
   border-right: 1px solid #ddd;
-
 }
 
 /* Remove right border for the last column */
@@ -320,92 +299,13 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-88%, 10%);
+  transform: translate(-78%, 5%);
   z-index: 2000;
 }
 
-/* Hero Dropdown Styles */
-.hero-dropdown-menu {
-  position: absolute !important;
-  top: auto;
-  bottom: 100%; /* Adjust to open upwards */
-  background-color: #fff;
-  border-radius: 0px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 22000;
-  width: 900px;
-  transform: translate(-88%, -10%);
-
-  border-bottom: none;
-}
-
 /* Style for the hero dropdown content with three columns */
-.hero-dropdown-column {
-  flex: 1;
-  font-family: "Oswald", sans-serif;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-  
-}
-
-/* Specific styling for hero columns */
-.hero-dropdown-column.hero-images-column {
-  border-right: 1px solid #ccc; /* Custom border for images column */
-  overflow-y: scroll;
-  
-}
-
-.hero-dropdown-column.hero-items-column {
-  border-right: 1px solid #ccc; /* Custom border for items column */
-}
-
-.hero-dropdown-column.hero-title-column {
-  border-right: none; /* No border for the last column */
-}
-
-/* Style for hero titles */
-.hero-dropdown-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 17px;
-  cursor: pointer;
-}
-
-/* Circular images for the hero dropdown */
-.hero-dropdown-image {
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-left: 20px;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-/* Styling for hero items */
-.hero-dropdown-item {
-  padding: 5px 0;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.dropdown-title.active,
-.hero-dropdown-title.active {
-  background-color: #f0f0f0; /* Change to desired highlight color */
-  color: #007bff; /* Change to desired text color */
-  border-radius: 5px; /* Optional: adjust styling */
-  padding: 5px 10px; /* Optional: adjust padding */
-}
-
-
-
-
-
-
 
 @media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
-
-  
   .main-banner {
     position: relative;
     height: 100vh; /* Full height */
@@ -414,7 +314,7 @@
     justify-content: flex-end;
     overflow: hidden; /* Ensure child elements do not overflow */
   }
-  
+
   .carousel {
     position: absolute;
     top: 0;
@@ -423,34 +323,30 @@
     height: 100%;
     z-index: 0; /* Ensure the carousel is behind other content */
   }
-  
+
   .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full height */
   }
-  
+
   .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(70%);
   }
-  
+
   .carousel-caption {
-  
-  
     position: absolute;
     top: 0%;
-  
-  
-  
+
     color: white; /* Text color */
     z-index: 2; /* Ensure it appears above the carousel */
     pointer-events: none; /* Ensure the caption does not block interactions */
   }
-  
+
   .hero-text {
     color: white; /* Text color */
     font-family: "Philosopher", sans-serif;
@@ -461,35 +357,33 @@
     border-radius: 10px;
     margin-top: 320px; /* Optional: Add rounded corners */
   }
-  
+
   .hero-text h1 {
-    
     font-size: 100px;
   }
-  
+
   /* Overlay image common styles */
-  .carousel-overlay-image1  {
+  .carousel-overlay-image1 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 400px; /* Adjust the width as needed */
     height: 390px; /* Maintain aspect ratio */
     z-index: 1;
   }
-  
-  .carousel-overlay-image2  {
+
+  .carousel-overlay-image2 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 10px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 330px; /* Adjust the width as needed */
     height: 380px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image2 .overlay-image-2 {
     height: 250px;
     width: 300px;
@@ -498,38 +392,34 @@
     position: absolute;
     bottom: 130px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image3 .overlay-image-3 {
     height: 300px;
     width: 320px;
   }
-  
+
   .carousel-overlay-image4 {
     position: absolute;
     bottom: 180px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 340px; /* Adjust the width as needed */
     height: 390px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image4 .overlay-image-4 {
     height: 390px;
     width: 350px;
   }
-  
-  
-  
+
   .navbar-hero {
     width: 100%;
     display: flex;
@@ -540,14 +430,11 @@
     bottom: 0;
     z-index: 10;
     transition: all 0.3s ease;
-  
-    
-  
   }
   .navbar-hero::before {
     content: "";
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
@@ -555,7 +442,7 @@
     clip-path: polygon(0 0, 14% 0, 20% 80px, 100% 80px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-sticky {
     width: 100%;
     display: flex;
@@ -568,7 +455,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .navbar-sticky::before {
     content: "";
     position: absolute;
@@ -580,7 +467,7 @@
     clip-path: polygon(0 0, 13% 0, 20% 50px, 100% 50px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-container {
     display: flex;
     align-items: center;
@@ -588,67 +475,66 @@
     position: relative; /* Make sure it respects the stacking context */
     z-index: 1; /* Bring the navbar content above the blue overlay */
   }
-  
+
   .navbar-brand {
     display: flex;
-    
+
     font-size: 70px;
     font-weight: bold;
     color: rgb(6, 6, 162);
     padding: 10px 20px;
     margin-right: 0px;
     transition: all 0.3s ease;
-  
+
     height: 100%;
   }
-  
+
   .logoimg {
-  
     height: 240px;
     width: 280px;
     transition: all 0.3s ease;
-  
+
     margin-left: -70px;
-    
   }
-  
+
   .sticky-logo-img {
-    height: 180px;
-    width: 250px;
+    height: 160px;
+    width: 200px;
+    margin-left: -20px;
   }
-  
+
   /* General Navbar Styles */
   .navbar-nav {
     display: flex;
     align-items: center;
     gap: 10px; /* Add spacing between nav links */
-    font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+    font-family: "Oswald", sans-serif; /* Font family for all nav links */
     font-size: 15px;
     margin-left: -30px;
     font-weight: 600;
     text-decoration: none !important;
   }
-  
+
   /* Hero Navbar Specific Styles */
   .navbar-hero .navbar-nav {
     margin-top: 70px;
   }
-  
+
   /* Individual Nav Link Styles */
   .nav-link {
     color: #000000 !important; /* Default color */
     background-color: rebeccapurple; /* Default background color */
-    
+
     text-align: center;
     transition: background-color 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Add rounded corners */
   }
-  
+
   /* Hover State */
   .nav-link:hover {
     background-color: red; /* Background color on hover */
   }
-  
+
   /* Active State with High Specificity */
   .nav-link.active-nav-link,
   .navbar-nav .nav-link.active,
@@ -657,13 +543,12 @@
     color: #ffffff !important; /* Active text color for better contrast */
     border-radius: 5px; /* Maintain rounded corners */
   }
-  
+
   /* Sticky Navbar Specific Styles */
   .nav-toggle-sticky .navbar-nav {
     margin-top: 40px; /* Margin for sticky navbar items */
   }
-  
-  
+
   /* Style for the custom dropdown content with three columns */
   .custom-dropdown-content {
     display: flex;
@@ -677,21 +562,20 @@
     overflow: hidden;
     margin: 0 auto;
   }
-  
+
   /* Scrollable columns */
   .dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-  
   }
-  
+
   /* Remove right border for the last column */
   .dropdown-column:last-child {
     border-right: none;
   }
-  
+
   /* Style for titles */
   .dropdown-title {
     font-weight: bold;
@@ -699,7 +583,7 @@
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images */
   .dropdown-image {
     border-radius: 50%;
@@ -710,7 +594,7 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Sticky dropdown menu styling to center on the screen */
   .sticky-dropdown-menu {
     background-color: #fff;
@@ -725,7 +609,7 @@
     transform: translate(-88%, 10%);
     z-index: 2000;
   }
-  
+
   /* Hero Dropdown Styles */
   .hero-dropdown-menu {
     position: absolute !important;
@@ -737,34 +621,32 @@
     z-index: 22000;
     width: 900px;
     transform: translate(-88%, -10%);
-  
+
     border-bottom: none;
   }
-  
+
   /* Style for the hero dropdown content with three columns */
   .hero-dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-    
   }
-  
+
   /* Specific styling for hero columns */
   .hero-dropdown-column.hero-images-column {
     border-right: 1px solid #ccc; /* Custom border for images column */
     overflow-y: scroll;
-    
   }
-  
+
   .hero-dropdown-column.hero-items-column {
     border-right: 1px solid #ccc; /* Custom border for items column */
   }
-  
+
   .hero-dropdown-column.hero-title-column {
     border-right: none; /* No border for the last column */
   }
-  
+
   /* Style for hero titles */
   .hero-dropdown-title {
     font-weight: bold;
@@ -772,7 +654,7 @@
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images for the hero dropdown */
   .hero-dropdown-image {
     border-radius: 50%;
@@ -783,14 +665,14 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Styling for hero items */
   .hero-dropdown-item {
     padding: 5px 0;
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .dropdown-title.active,
   .hero-dropdown-title.active {
     background-color: #f0f0f0; /* Change to desired highlight color */
@@ -798,17 +680,9 @@
     border-radius: 5px; /* Optional: adjust styling */
     padding: 5px 10px; /* Optional: adjust padding */
   }
-  
-  
-  
-  
-  
-  
-
 }
 
-
-@media only screen and (min-width: 1364px) and (max-width: 1367px) and (orientation: landscape) { 
+@media only screen and (min-width: 1364px) and (max-width: 1367px) and (orientation: landscape) {
   .main-banner {
     position: relative;
     height: 100vh; /* Full height */
@@ -817,7 +691,7 @@
     justify-content: flex-end;
     overflow: hidden; /* Ensure child elements do not overflow */
   }
-  
+
   .carousel {
     position: absolute;
     top: 0;
@@ -826,34 +700,30 @@
     height: 100%;
     z-index: 0; /* Ensure the carousel is behind other content */
   }
-  
+
   .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full height */
   }
-  
+
   .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(70%);
   }
-  
+
   .carousel-caption {
-  
-  
     position: absolute;
     top: 0%;
-  
-  
-  
+
     color: white; /* Text color */
     z-index: 2; /* Ensure it appears above the carousel */
     pointer-events: none; /* Ensure the caption does not block interactions */
   }
-  
+
   .hero-text {
     color: white; /* Text color */
     font-family: "Philosopher", sans-serif;
@@ -864,35 +734,33 @@
     border-radius: 10px;
     margin-top: 320px; /* Optional: Add rounded corners */
   }
-  
+
   .hero-text h1 {
-    
     font-size: 100px;
   }
-  
+
   /* Overlay image common styles */
-  .carousel-overlay-image1  {
+  .carousel-overlay-image1 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 400px; /* Adjust the width as needed */
     height: 390px; /* Maintain aspect ratio */
     z-index: 1;
   }
-  
-  .carousel-overlay-image2  {
+
+  .carousel-overlay-image2 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 10px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 330px; /* Adjust the width as needed */
     height: 380px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image2 .overlay-image-2 {
     height: 250px;
     width: 300px;
@@ -901,38 +769,34 @@
     position: absolute;
     bottom: 130px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image3 .overlay-image-3 {
     height: 300px;
     width: 320px;
   }
-  
+
   .carousel-overlay-image4 {
     position: absolute;
     bottom: 180px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 340px; /* Adjust the width as needed */
     height: 390px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image4 .overlay-image-4 {
     height: 390px;
     width: 350px;
   }
-  
-  
-  
+
   .navbar-hero {
     width: 100%;
     display: flex;
@@ -943,14 +807,11 @@
     bottom: 0;
     z-index: 10;
     transition: all 0.3s ease;
-  
-    
-  
   }
   .navbar-hero::before {
     content: "";
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
@@ -958,7 +819,7 @@
     clip-path: polygon(0 0, 14% 0, 20% 80px, 100% 80px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-sticky {
     width: 100%;
     display: flex;
@@ -971,7 +832,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .navbar-sticky::before {
     content: "";
     position: absolute;
@@ -983,7 +844,7 @@
     clip-path: polygon(0 0, 13% 0, 20% 50px, 100% 50px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-container {
     display: flex;
     align-items: center;
@@ -991,52 +852,51 @@
     position: relative; /* Make sure it respects the stacking context */
     z-index: 1; /* Bring the navbar content above the blue overlay */
   }
-  
+
   .navbar-brand {
     display: flex;
-    
+
     font-size: 70px;
     font-weight: bold;
     color: rgb(6, 6, 162);
     padding: 10px 20px;
     margin-right: 0px;
     transition: all 0.3s ease;
-  
+
     height: 100%;
   }
-  
+
   .logoimg {
-  
     height: 240px;
     width: 280px;
     transition: all 0.3s ease;
-  
+
     margin-left: -30px;
-    
   }
-  
+
   .sticky-logo-img {
     height: 180px;
     width: 260px;
+    margin-left: -20px;
   }
-  
+
   /* General Navbar Styles */
   .navbar-nav {
     display: flex;
     align-items: center;
     gap: 40px; /* Add spacing between nav links */
-    font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+    font-family: "Oswald", sans-serif; /* Font family for all nav links */
     font-size: 17px;
     margin-left: 10px;
     font-weight: 600;
     text-decoration: none !important;
   }
-  
+
   /* Hero Navbar Specific Styles */
   .navbar-hero .navbar-nav {
     margin-top: 70px;
   }
-  
+
   /* Individual Nav Link Styles */
   .nav-link {
     color: #000000 !important; /* Default color */
@@ -1046,12 +906,12 @@
     transition: background-color 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Add rounded corners */
   }
-  
+
   /* Hover State */
   .nav-link:hover {
     background-color: red; /* Background color on hover */
   }
-  
+
   /* Active State with High Specificity */
   .nav-link.active-nav-link,
   .navbar-nav .nav-link.active,
@@ -1060,13 +920,12 @@
     color: #ffffff !important; /* Active text color for better contrast */
     border-radius: 5px; /* Maintain rounded corners */
   }
-  
+
   /* Sticky Navbar Specific Styles */
   .nav-toggle-sticky .navbar-nav {
     margin-top: 40px; /* Margin for sticky navbar items */
   }
-  
-  
+
   /* Style for the custom dropdown content with three columns */
   .custom-dropdown-content {
     display: flex;
@@ -1080,21 +939,20 @@
     overflow: hidden;
     margin: 0 auto;
   }
-  
+
   /* Scrollable columns */
   .dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-  
   }
-  
+
   /* Remove right border for the last column */
   .dropdown-column:last-child {
     border-right: none;
   }
-  
+
   /* Style for titles */
   .dropdown-title {
     font-weight: bold;
@@ -1102,7 +960,7 @@
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images */
   .dropdown-image {
     border-radius: 50%;
@@ -1113,7 +971,7 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Sticky dropdown menu styling to center on the screen */
   .sticky-dropdown-menu {
     background-color: #fff;
@@ -1128,7 +986,7 @@
     transform: translate(-88%, 10%);
     z-index: 2000;
   }
-  
+
   /* Hero Dropdown Styles */
   .hero-dropdown-menu {
     position: absolute !important;
@@ -1140,34 +998,32 @@
     z-index: 22000;
     width: 900px;
     transform: translate(-88%, -10%);
-  
+
     border-bottom: none;
   }
-  
+
   /* Style for the hero dropdown content with three columns */
   .hero-dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-    
   }
-  
+
   /* Specific styling for hero columns */
   .hero-dropdown-column.hero-images-column {
     border-right: 1px solid #ccc; /* Custom border for images column */
     overflow-y: scroll;
-    
   }
-  
+
   .hero-dropdown-column.hero-items-column {
     border-right: 1px solid #ccc; /* Custom border for items column */
   }
-  
+
   .hero-dropdown-column.hero-title-column {
     border-right: none; /* No border for the last column */
   }
-  
+
   /* Style for hero titles */
   .hero-dropdown-title {
     font-weight: bold;
@@ -1175,7 +1031,7 @@
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images for the hero dropdown */
   .hero-dropdown-image {
     border-radius: 50%;
@@ -1186,14 +1042,14 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Styling for hero items */
   .hero-dropdown-item {
     padding: 5px 0;
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .dropdown-title.active,
   .hero-dropdown-title.active {
     background-color: #f0f0f0; /* Change to desired highlight color */
@@ -1201,19 +1057,10 @@
     border-radius: 5px; /* Optional: adjust styling */
     padding: 5px 10px; /* Optional: adjust padding */
   }
-  
-  
-  
-
 }
 
 /* ipad air and ipad pro */
-@media only screen 
-and (min-device-width: 766px) 
-and (max-device-width: 900px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-
+@media only screen and (min-device-width: 766px) and (max-device-width: 900px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .main-banner {
     position: relative;
     height: 100vh; /* Full height */
@@ -1222,7 +1069,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     justify-content: flex-end;
     overflow: hidden; /* Ensure child elements do not overflow */
   }
-  
+
   .carousel {
     position: absolute;
     top: 0;
@@ -1231,34 +1078,30 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 100%;
     z-index: 0; /* Ensure the carousel is behind other content */
   }
-  
+
   .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full height */
   }
-  
+
   .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(70%);
   }
-  
+
   .carousel-caption {
-  
-  
     position: absolute;
     top: 0%;
-  
-  
-  
+
     color: white; /* Text color */
     z-index: 2; /* Ensure it appears above the carousel */
     pointer-events: none; /* Ensure the caption does not block interactions */
   }
-  
+
   .hero-text {
     color: white; /* Text color */
     font-family: "Philosopher", sans-serif;
@@ -1269,35 +1112,33 @@ and (-webkit-min-device-pixel-ratio: 2) {
     border-radius: 10px;
     margin-top: 200px; /* Optional: Add rounded corners */
   }
-  
+
   .hero-text h1 {
-    
     font-size: 100px;
   }
-  
+
   /* Overlay image common styles */
-  .carousel-overlay-image1  {
+  .carousel-overlay-image1 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 400px; /* Adjust the width as needed */
     height: 390px; /* Maintain aspect ratio */
     z-index: 1;
   }
-  
-  .carousel-overlay-image2  {
+
+  .carousel-overlay-image2 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 10px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 330px; /* Adjust the width as needed */
     height: 380px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image2 .overlay-image-2 {
     height: 250px;
     width: 300px;
@@ -1306,38 +1147,34 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: absolute;
     bottom: 130px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image3 .overlay-image-3 {
     height: 300px;
     width: 320px;
   }
-  
+
   .carousel-overlay-image4 {
     position: absolute;
     bottom: 180px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 340px; /* Adjust the width as needed */
     height: 390px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image4 .overlay-image-4 {
     height: 390px;
     width: 350px;
   }
-  
-  
-  
+
   .navbar-hero {
     width: 100%;
     display: flex;
@@ -1348,22 +1185,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 0;
     z-index: 10;
     transition: all 0.3s ease;
-  
-    
-  
   }
   .navbar-hero::before {
     content: "";
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
     background-color: white; /* Blue color */
-    clip-path: polygon(0 0, 14% 0, 20% 80px, 100% 80px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 20% 0, 30% 80px, 100% 80px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-sticky {
     width: 100%;
     display: flex;
@@ -1376,7 +1210,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .navbar-sticky::before {
     content: "";
     position: absolute;
@@ -1385,10 +1219,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     width: 100%;
     height: 110px;
     background-color: white; /* Blue color */
-    clip-path: polygon(0 0, 13% 0, 20% 50px, 100% 50px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 18% 0, 27% 50px, 100% 50px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-container {
     display: flex;
     align-items: center;
@@ -1396,52 +1230,51 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: relative; /* Make sure it respects the stacking context */
     z-index: 1; /* Bring the navbar content above the blue overlay */
   }
-  
+
   .navbar-brand {
     display: flex;
-    
+
     font-size: 70px;
     font-weight: bold;
     color: rgb(6, 6, 162);
     padding: 10px 20px;
     margin-right: 0px;
     transition: all 0.3s ease;
-  
+
     height: 100%;
   }
-  
+
   .logoimg {
-  
     height: 200px;
-    width: 250px;
+    width: 220px;
     transition: all 0.3s ease;
-  
-    margin-left: -70px;
-    
+
+    margin-left: -20px;
   }
-  
+
   .sticky-logo-img {
-    height: 180px;
-    width: 260px;
+    height: 150px;
+    width: 200px;
+    margin-left: -20px;
   }
-  
+
   /* General Navbar Styles */
   .navbar-nav {
     display: flex;
     align-items: center;
     gap: 40px; /* Add spacing between nav links */
-    font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+    font-family: "Oswald", sans-serif; /* Font family for all nav links */
     font-size: 17px;
     margin-left: 10px;
     font-weight: 600;
     text-decoration: none !important;
   }
-  
+
   /* Hero Navbar Specific Styles */
   .navbar-hero .navbar-nav {
     margin-top: 70px;
   }
-  
+
   /* Individual Nav Link Styles */
   .nav-link {
     color: #000000 !important; /* Default color */
@@ -1451,12 +1284,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     transition: background-color 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Add rounded corners */
   }
-  
+
   /* Hover State */
   .nav-link:hover {
     background-color: red; /* Background color on hover */
   }
-  
+
   /* Active State with High Specificity */
   .nav-link.active-nav-link,
   .navbar-nav .nav-link.active,
@@ -1465,15 +1298,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     color: #ffffff !important; /* Active text color for better contrast */
     border-radius: 5px; /* Maintain rounded corners */
   }
-  
+
   /* Sticky Navbar Specific Styles */
-  .navbar-toggler {
-    margin-top: 60px;
-    width: 100%;
-    margin-left: 800%;
-  
-  }
-  
+
   /* Style for the custom dropdown content with three columns */
   .custom-dropdown-content {
     display: flex;
@@ -1487,21 +1314,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     overflow: hidden;
     margin: 0 auto;
   }
-  
+
   /* Scrollable columns */
   .dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-  
   }
-  
+
   /* Remove right border for the last column */
   .dropdown-column:last-child {
     border-right: none;
   }
-  
+
   /* Style for titles */
   .dropdown-title {
     font-weight: bold;
@@ -1509,7 +1335,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images */
   .dropdown-image {
     border-radius: 50%;
@@ -1520,7 +1346,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Sticky dropdown menu styling to center on the screen */
   .sticky-dropdown-menu {
     background-color: #fff;
@@ -1535,7 +1361,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     transform: translate(-88%, 10%);
     z-index: 2000;
   }
-  
+
   /* Hero Dropdown Styles */
   .hero-dropdown-menu {
     position: absolute !important;
@@ -1547,34 +1373,32 @@ and (-webkit-min-device-pixel-ratio: 2) {
     z-index: 22000;
     width: 900px;
     transform: translate(-88%, -10%);
-  
+
     border-bottom: none;
   }
-  
+
   /* Style for the hero dropdown content with three columns */
   .hero-dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-    
   }
-  
+
   /* Specific styling for hero columns */
   .hero-dropdown-column.hero-images-column {
     border-right: 1px solid #ccc; /* Custom border for images column */
     overflow-y: scroll;
-    
   }
-  
+
   .hero-dropdown-column.hero-items-column {
     border-right: 1px solid #ccc; /* Custom border for items column */
   }
-  
+
   .hero-dropdown-column.hero-title-column {
     border-right: none; /* No border for the last column */
   }
-  
+
   /* Style for hero titles */
   .hero-dropdown-title {
     font-weight: bold;
@@ -1582,7 +1406,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images for the hero dropdown */
   .hero-dropdown-image {
     border-radius: 50%;
@@ -1593,14 +1417,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Styling for hero items */
   .hero-dropdown-item {
     padding: 5px 0;
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .dropdown-title.active,
   .hero-dropdown-title.active {
     background-color: #f0f0f0; /* Change to desired highlight color */
@@ -1608,16 +1432,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     border-radius: 5px; /* Optional: adjust styling */
     padding: 5px 10px; /* Optional: adjust padding */
   }
-  
 
+  .toggler-hero {
+    height: 60px;
+    margin-top: 65px;
+    margin-right: -480px;
+  }
 
+  .nav-toggle-sticky {
+    margin-top: 70px;
+    margin-left: 450px;
+    height: 70px;
+  }
 }
-@media only screen 
-and (min-device-width: 1178px) 
-and (max-device-width: 1182px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-
+@media only screen and (min-device-width: 1178px) and (max-device-width: 1182px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .main-banner {
     position: relative;
     height: 100vh; /* Full height */
@@ -1626,7 +1454,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     justify-content: flex-end;
     overflow: hidden; /* Ensure child elements do not overflow */
   }
-  
+
   .carousel {
     position: absolute;
     top: 0;
@@ -1635,34 +1463,30 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 100%;
     z-index: 0; /* Ensure the carousel is behind other content */
   }
-  
+
   .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full height */
   }
-  
+
   .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(70%);
   }
-  
+
   .carousel-caption {
-  
-  
     position: absolute;
     top: 0%;
-  
-  
-  
+
     color: white; /* Text color */
     z-index: 2; /* Ensure it appears above the carousel */
     pointer-events: none; /* Ensure the caption does not block interactions */
   }
-  
+
   .hero-text {
     color: white; /* Text color */
     font-family: "Philosopher", sans-serif;
@@ -1673,35 +1497,33 @@ and (-webkit-min-device-pixel-ratio: 2) {
     border-radius: 10px;
     margin-top: 160px; /* Optional: Add rounded corners */
   }
-  
+
   .hero-text h1 {
-    
     font-size: 80px;
   }
-  
+
   /* Overlay image common styles */
-  .carousel-overlay-image1  {
+  .carousel-overlay-image1 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 400px; /* Adjust the width as needed */
     height: 390px; /* Maintain aspect ratio */
     z-index: 1;
   }
-  
-  .carousel-overlay-image2  {
+
+  .carousel-overlay-image2 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: 10px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 330px; /* Adjust the width as needed */
     height: 380px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image2 .overlay-image-2 {
     height: 250px;
     width: 300px;
@@ -1710,38 +1532,34 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: absolute;
     bottom: 130px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image3 .overlay-image-3 {
     height: 300px;
     width: 320px;
   }
-  
+
   .carousel-overlay-image4 {
     position: absolute;
     bottom: 180px; /* Adjust the bottom offset as needed */
     right: 40px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 340px; /* Adjust the width as needed */
     height: 390px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image4 .overlay-image-4 {
     height: 390px;
     width: 350px;
   }
-  
-  
-  
+
   .navbar-hero {
     width: 100%;
     display: flex;
@@ -1752,14 +1570,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     bottom: 0;
     z-index: 10;
     transition: all 0.3s ease;
-  
-    
-  
   }
   .navbar-hero::before {
     content: "";
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
@@ -1767,7 +1582,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     clip-path: polygon(0 0, 14% 0, 20% 80px, 100% 80px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-sticky {
     width: 100%;
     display: flex;
@@ -1780,7 +1595,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .navbar-sticky::before {
     content: "";
     position: absolute;
@@ -1792,7 +1607,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     clip-path: polygon(0 0, 13% 0, 20% 50px, 100% 50px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-container {
     display: flex;
     align-items: center;
@@ -1800,52 +1615,50 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: relative; /* Make sure it respects the stacking context */
     z-index: 1; /* Bring the navbar content above the blue overlay */
   }
-  
+
   .navbar-brand {
     display: flex;
-    
+
     font-size: 70px;
     font-weight: bold;
     color: rgb(6, 6, 162);
     padding: 10px 20px;
     margin-right: 0px;
     transition: all 0.3s ease;
-  
+
     height: 100%;
   }
-  
+
   .logoimg {
-  
     height: 200px;
     width: 250px;
     transition: all 0.3s ease;
-  
+
     margin-left: -40px;
-    
   }
-  
+
   .sticky-logo-img {
     height: 180px;
     width: 260px;
   }
-  
+
   /* General Navbar Styles */
   .navbar-nav {
     display: flex;
     align-items: center;
     gap: 20px; /* Add spacing between nav links */
-    font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+    font-family: "Oswald", sans-serif; /* Font family for all nav links */
     font-size: 17px;
     margin-left: 10px;
     font-weight: 600;
     text-decoration: none !important;
   }
-  
+
   /* Hero Navbar Specific Styles */
   .navbar-hero .navbar-nav {
     margin-top: 70px;
   }
-  
+
   /* Individual Nav Link Styles */
   .nav-link {
     color: #000000 !important; /* Default color */
@@ -1855,12 +1668,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     transition: background-color 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Add rounded corners */
   }
-  
+
   /* Hover State */
   .nav-link:hover {
     background-color: red; /* Background color on hover */
   }
-  
+
   /* Active State with High Specificity */
   .nav-link.active-nav-link,
   .navbar-nav .nav-link.active,
@@ -1869,15 +1682,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     color: #ffffff !important; /* Active text color for better contrast */
     border-radius: 5px; /* Maintain rounded corners */
   }
-  
+
   /* Sticky Navbar Specific Styles */
   .navbar-toggler {
     margin-top: 60px;
     width: 100%;
     margin-left: 800%;
-  
   }
-  
+
   /* Style for the custom dropdown content with three columns */
   .custom-dropdown-content {
     display: flex;
@@ -1891,21 +1703,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     overflow: hidden;
     margin: 0 auto;
   }
-  
+
   /* Scrollable columns */
   .dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-  
   }
-  
+
   /* Remove right border for the last column */
   .dropdown-column:last-child {
     border-right: none;
   }
-  
+
   /* Style for titles */
   .dropdown-title {
     font-weight: bold;
@@ -1913,7 +1724,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images */
   .dropdown-image {
     border-radius: 50%;
@@ -1924,7 +1735,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Sticky dropdown menu styling to center on the screen */
   .sticky-dropdown-menu {
     background-color: #fff;
@@ -1939,7 +1750,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     transform: translate(-88%, 10%);
     z-index: 2000;
   }
-  
+
   /* Hero Dropdown Styles */
   .hero-dropdown-menu {
     position: absolute !important;
@@ -1951,34 +1762,32 @@ and (-webkit-min-device-pixel-ratio: 2) {
     z-index: 22000;
     width: 900px;
     transform: translate(-88%, -10%);
-  
+
     border-bottom: none;
   }
-  
+
   /* Style for the hero dropdown content with three columns */
   .hero-dropdown-column {
     flex: 1;
     font-family: "Oswald", sans-serif;
     padding: 10px;
     border-right: 1px solid #ddd;
-    
   }
-  
+
   /* Specific styling for hero columns */
   .hero-dropdown-column.hero-images-column {
     border-right: 1px solid #ccc; /* Custom border for images column */
     overflow-y: scroll;
-    
   }
-  
+
   .hero-dropdown-column.hero-items-column {
     border-right: 1px solid #ccc; /* Custom border for items column */
   }
-  
+
   .hero-dropdown-column.hero-title-column {
     border-right: none; /* No border for the last column */
   }
-  
+
   /* Style for hero titles */
   .hero-dropdown-title {
     font-weight: bold;
@@ -1986,7 +1795,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 17px;
     cursor: pointer;
   }
-  
+
   /* Circular images for the hero dropdown */
   .hero-dropdown-image {
     border-radius: 50%;
@@ -1997,14 +1806,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     object-fit: cover;
     margin-bottom: 10px;
   }
-  
+
   /* Styling for hero items */
   .hero-dropdown-item {
     padding: 5px 0;
     font-size: 16px;
     cursor: pointer;
   }
-  
+
   .dropdown-title.active,
   .hero-dropdown-title.active {
     background-color: #f0f0f0; /* Change to desired highlight color */
@@ -2012,23 +1821,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
     border-radius: 5px; /* Optional: adjust styling */
     padding: 5px 10px; /* Optional: adjust padding */
   }
-  
-
-
 }
-
 
 /* iPhone 14 Pro Max Portrait Mode */
 @media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
   .main-banner {
+    margin-top: 100px;
     position: relative;
-    height: 100vh; /* Full height */
+    height: 90vh; /* Full height */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden; /* Ensure child elements do not overflow */
   }
-  
+
   .carousel {
     position: absolute;
     top: 0;
@@ -2037,34 +1843,30 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 100%;
     z-index: 0; /* Ensure the carousel is behind other content */
   }
-  
+
   .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full height */
+    height: 90vh; /* Full height */
   }
-  
+
   .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(70%);
   }
-  
+
   .carousel-caption {
-  
-  
     position: absolute;
     top: 0%;
-  
-  
-  
+
     color: white; /* Text color */
     z-index: 2; /* Ensure it appears above the carousel */
     pointer-events: none; /* Ensure the caption does not block interactions */
   }
-  
+
   .hero-text {
     color: white; /* Text color */
     font-family: "Philosopher", sans-serif;
@@ -2073,38 +1875,35 @@ and (-webkit-min-device-pixel-ratio: 2) {
     text-align: center;
     padding: 0px; /* Add some padding */
     border-radius: 10px;
-    margin-top: 180px; /* Optional: Add rounded corners */
+    margin-top: 130px; /* Optional: Add rounded corners */
   }
-  
+
   .hero-text h1 {
-    
     font-size: 65px;
   }
-  
+
   /* Overlay image common styles */
-  .carousel-overlay-image1  {
+  .carousel-overlay-image1 {
     position: absolute;
     bottom: 60px; /* Adjust the bottom offset as needed */
     right: -70px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 400px; /* Adjust the width as needed */
     height: 320px; /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
-  .carousel-overlay-image2  {
+
+  .carousel-overlay-image2 {
     position: absolute;
     bottom: 60px; /* Adjust the bottom offset as needed */
     right: -0px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image2 .overlay-image-2 {
     height: 250px;
     width: 300px;
@@ -2113,41 +1912,38 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: absolute;
     bottom: 70px; /* Adjust the bottom offset as needed */
     right: 0px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image3 .overlay-image-3 {
     height: 250px;
     width: 300px;
   }
-  
+
   .carousel-overlay-image4 {
     position: absolute;
     bottom: 80px; /* Adjust the bottom offset as needed */
     right: -50px; /* Adjust the right offset as needed */
-     /* Adjust to center vertically */
+    /* Adjust to center vertically */
     width: 300px; /* Adjust the width as needed */
     height: 310px;
-   /* Maintain aspect ratio */
+    /* Maintain aspect ratio */
     z-index: 1;
-  
   }
-  
+
   .carousel-overlay-image4 .overlay-image-4 {
     height: 250px;
     width: 300px;
   }
-  
-  
-  
+
   .navbar-hero {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     background-color: transparent;
@@ -2155,22 +1951,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
     top: 0;
     z-index: 10;
     transition: all 0.3s ease;
-  
-    
-  
   }
   .navbar-hero::before {
     content: "";
     position: absolute;
-    top:  0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100px;
     background-color: white; /* Blue color */
     clip-path: none;
-    z-index:-1; /* Place it behind the navbar content */
+    z-index: -1;
   }
-  
+
   .navbar-sticky {
     width: 100%;
     display: flex;
@@ -2183,7 +1976,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
-  
+
   .navbar-sticky::before {
     content: "";
     position: absolute;
@@ -2192,10 +1985,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     width: 100%;
     height: 110px;
     background-color: white; /* Blue color */
-    clip-path: polygon(0 0, 20% 0, 29% 50px, 100% 50px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 25% 0, 32% 35px, 100% 35px, 100% 100%, 0 100%);
     z-index: -1; /* Place it behind the navbar content */
   }
-  
+
   .navbar-container {
     display: flex;
     align-items: center;
@@ -2203,219 +1996,85 @@ and (-webkit-min-device-pixel-ratio: 2) {
     position: relative; /* Make sure it respects the stacking context */
     z-index: 1; /* Bring the navbar content above the blue overlay */
   }
-  
+
   .navbar-brand {
     display: flex;
-    
+
     font-size: 70px;
     font-weight: bold;
     color: rgb(6, 6, 162);
     padding: 10px 20px;
     margin-right: 0px;
     transition: all 0.3s ease;
-  
+
     height: 100%;
   }
-  
+
   .logoimg {
-  
-    height: 180px;
-    width: 210px;
+    height: 150px;
+    width: 150px;
     transition: all 0.3s ease;
-  
-    margin-left: -30px;
-    
+
+    margin-left: 10px;
   }
-  
+
   .sticky-logo-img {
     height: 150px;
-    width: 200px;
-    margin-left: -50px;
+    width: 150px;
+    margin-left: -20px;
   }
-  
+
   /* General Navbar Styles */
   .navbar-nav {
     display: flex;
     align-items: center;
     gap: 40px; /* Add spacing between nav links */
-    font-family: 'Oswald', sans-serif; /* Font family for all nav links */
+    font-family: "Oswald", sans-serif; /* Font family for all nav links */
     font-size: 17px;
     margin-left: 80px;
     font-weight: 600;
     text-decoration: none !important;
   }
-  
+
   /* Hero Navbar Specific Styles */
   .navbar-hero .navbar-nav {
     margin-top: 70px;
   }
-  
+
   /* Individual Nav Link Styles */
   .nav-link {
     color: #000000 !important; /* Default color */
     background-color: rebeccapurple; /* Default background color */
     width: 98px;
-    text-align: center;
     transition: background-color 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Add rounded corners */
   }
-  
+
   /* Hover State */
   .nav-link:hover {
     background-color: red; /* Background color on hover */
   }
-  
+
   /* Active State with High Specificity */
   .nav-link.active-nav-link,
   .navbar-nav .nav-link.active,
   .nav-link.active {
     background-color: red !important; /* Active background color */
     color: #ffffff !important; /* Active text color for better contrast */
-    border-radius: 5px; /* Maintain rounded corners */
+    border-radius: 5px;
   }
-  
+
+  .toggle-div {
+    margin-left: 100px;
+  }
+
+  /* for sticky navbar */
   .navbar-toggler {
-    margin-left: 90px;
-    margin-top: 30px;
-  }
-  
-  
-  /* Style for the custom dropdown content with three columns */
-  .custom-dropdown-content {
-    display: flex;
-    gap: 20px;
-    padding: 0px;
-    padding-left: 10px;
-    padding-right: 0px;
-    width: 100%;
-    max-width: 1200px;
-    height: 210px;
-    overflow: hidden;
-    margin: 0 auto;
+    height: 50px;
   }
 
-  .dropdown-column {
-    flex: 1;
-    font-family: "Oswald", sans-serif;
-    padding: 10px;
-    border-right: 1px solid #ddd;
-  
+  .nav-toggle-sticky {
+    margin-top: 20px;
+    margin-left: 180px;
   }
-  
-
-  .dropdown-column:last-child {
-    border-right: none;
-  }
-  
-
-  .dropdown-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 17px;
-    cursor: pointer;
-  }
-  
-  /* Circular images */
-  .dropdown-image {
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  /* Sticky dropdown menu styling to center on the screen */
-  .sticky-dropdown-menu {
-    background-color: #fff;
-    width: 1200px;
-    height: 240px;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding-top: 10px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-88%, 10%);
-    z-index: 2000;
-  }
-  
-  /* Hero Dropdown Styles */
-  .hero-dropdown-menu {
-    position: absolute !important;
-    top: auto;
-    bottom: 100%; /* Adjust to open upwards */
-    background-color: #fff;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 22000;
-    width: 900px;
-    transform: translate(-88%, -10%);
-  
-    border-bottom: none;
-  }
-  
-  /* Style for the hero dropdown content with three columns */
-  .hero-dropdown-column {
-    flex: 1;
-    font-family: "Oswald", sans-serif;
-    padding: 10px;
-    border-right: 1px solid #ddd;
-    
-  }
-  
-  /* Specific styling for hero columns */
-  .hero-dropdown-column.hero-images-column {
-    border-right: 1px solid #ccc; /* Custom border for images column */
-    overflow-y: scroll;
-    
-  }
-  
-  .hero-dropdown-column.hero-items-column {
-    border-right: 1px solid #ccc; /* Custom border for items column */
-  }
-  
-  .hero-dropdown-column.hero-title-column {
-    border-right: none; /* No border for the last column */
-  }
-  
-  /* Style for hero titles */
-  .hero-dropdown-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 17px;
-    cursor: pointer;
-  }
-  
-  /* Circular images for the hero dropdown */
-  .hero-dropdown-image {
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for hero items */
-  .hero-dropdown-item {
-    padding: 5px 0;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .dropdown-title.active,
-  .hero-dropdown-title.active {
-    background-color: #f0f0f0; /* Change to desired highlight color */
-    color: #007bff; /* Change to desired text color */
-    border-radius: 5px; /* Optional: adjust styling */
-    padding: 5px 10px; /* Optional: adjust padding */
-  }
-  
-  
-  
 }
-
-

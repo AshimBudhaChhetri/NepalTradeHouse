@@ -1,9 +1,10 @@
 import React from 'react'
 import ContentSwitcher from './components/ContentSwitcher'
+
 const Gallery = () => {
   return (
     <div>
-      <ContentSwitcher />
+      <ContentSwitcher   />
     </div>
   )
 }

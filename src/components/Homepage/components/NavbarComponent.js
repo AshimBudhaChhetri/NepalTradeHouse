@@ -3,25 +3,18 @@ import { NavLink, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Dropdown from "react-bootstrap/Dropdown";
+import AllCategoriesDropdown from "./AllCategoriesDropdown"; // Import the new component
 import NavPopup from "./NavPopup";
 import Logo from "../../../logoo.png";
 import "./Navbar.css";
-import momopic from "../../../momo.png";
-import restaurantpic from "../../../restaurant.jpg";
-import fashion from "../../../fashion.jpg";
 
 const NavbarComponent = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-  const [activeCategory, setActiveCategory] = useState(null);
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); // State to check if the device is mobile
+  const [isMobile, setIsMobile] = useState(false);
   const location = useLocation();
   const stickyNavbarRef = useRef(null);
-  const [hoverTimeout, setHoverTimeout] = useState(null);
 
-  // Detect screen width to check if it's mobile
   useEffect(() => {
     const updateIsMobile = () => {
       setIsMobile(window.innerWidth <= 820);
@@ -52,72 +45,8 @@ const NavbarComponent = () => {
   }, [location.pathname]);
 
   const handleToggleClick = () => {
-    // Only show the popup on mobile devices
     if (isMobile) {
       setShowPopup(!showPopup);
-    }
-  };
-
-  const categories = {
-    "Top Categories": {
-      items: [
-        "Restaurant / Decor",
-        "Food & Beverages",
-        "Fashion & Outfit",
-        "Raw Materials",
-        "Health & Happiness of Personal Care",
-      ],
-      images: [restaurantpic, fashion, momopic, restaurantpic, fashion],
-    },
-    Gifts: {
-      items: ["XYZ", "ABC"],
-      images: [fashion, restaurantpic],
-    },
-    Services: {
-      items: [
-        "Information Technology",
-        "Accounting & Financial Services",
-        "Health & Wellness Services",
-        "Legal Aid Services",
-        "Travel & Tourism Services",
-      ],
-      images: [momopic, restaurantpic, momopic, fashion, momopic],
-    },
-  };
-
-  const handleCategoryHover = (category) => {
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-    }
-    const timeout = setTimeout(() => {
-      setActiveCategory(category);
-    }, 300);
-    setHoverTimeout(timeout);
-  };
-
-  const handleDropdownClick = () => {
-    setShowDropdown((prev) => !prev);
-    if (!showDropdown) {
-      setActiveCategory("Top Categories");
-    } else {
-      setActiveCategory(null);
-    }
-  };
-
-  const handleAllCategoriesClick = () => {
-    if (stickyNavbarRef.current) {
-      stickyNavbarRef.current.scrollIntoView({ behavior: "smooth" });
-      setTimeout(() => {
-        setShowDropdown(true);
-
-        if (hoverTimeout) {
-          clearTimeout(hoverTimeout);
-        }
-        const timeout = setTimeout(() => {
-          setActiveCategory("Top Categories");
-        }, 300);
-        setHoverTimeout(timeout);
-      }, 500);
     }
   };
 
@@ -130,66 +59,17 @@ const NavbarComponent = () => {
         About Us
       </Nav.Link>
       <Nav.Link as={NavLink} to="/gallery" activeClassName="active-nav-link">
-        Our Gallery
+        Products
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/Newsevent" activeClassName="active-nav-link">
+        News & Events
       </Nav.Link>
       <Nav.Link as={NavLink} to="/contact" activeClassName="active-nav-link">
         Contact Us
       </Nav.Link>
-      <Nav.Link as={NavLink} to="/cs" activeClassName="active-nav-link">
-        Blog
-      </Nav.Link>
-      <Nav.Link as={NavLink} to="/cs" activeClassName="active-nav-link">
-        Language
-      </Nav.Link>
 
-      <Dropdown className="sticky-dropdown" drop="down" show={showDropdown}>
-        <Dropdown.Toggle
-          variant="link"
-          className="nav-link"
-          onClick={handleDropdownClick}
-        >
-          All Categories
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu className="sticky-dropdown-menu">
-          <div className="custom-dropdown-content">
-            <div className="dropdown-column images-column">
-              {activeCategory &&
-                categories[activeCategory].images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Image ${index + 1}`}
-                    className="dropdown-image"
-                  />
-                ))}
-            </div>
-
-            <div className="dropdown-column items-column">
-              {activeCategory &&
-                categories[activeCategory].items.map((item, index) => (
-                  <div key={index} className="dropdown-item">
-                    {item}
-                  </div>
-                ))}
-            </div>
-
-            <div className="dropdown-column title-column">
-              {Object.keys(categories).map((title) => (
-                <div
-                  key={title}
-                  className={`dropdown-title ${
-                    activeCategory === title ? "active" : ""
-                  }`}
-                  onMouseEnter={() => handleCategoryHover(title)}
-                >
-                  {title}
-                </div>
-              ))}
-            </div>
-          </div>
-        </Dropdown.Menu>
-      </Dropdown>
+      {/* Use the new AllCategoriesDropdown component without the upward direction in sticky navbar */}
+      <AllCategoriesDropdown />
     </Nav>
   );
 
@@ -207,7 +87,7 @@ const NavbarComponent = () => {
                   <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     onClick={handleToggleClick}
-                    className="me-auto d-lg-none"
+                    className="ms-auto d-lg-none toggler-hero"
                   />
                   <div className="d-none d-lg-flex">
                     <Nav className="navbar-nav">
@@ -221,7 +101,7 @@ const NavbarComponent = () => {
                       </Nav.Link>
                       <Nav.Link
                         as={NavLink}
-                        to="/cs"
+                        to="/aboutpage"
                         activeClassName="active-nav-link"
                       >
                         About Us
@@ -231,7 +111,14 @@ const NavbarComponent = () => {
                         to="/gallery"
                         activeClassName="active-nav-link"
                       >
-                        Our Gallery
+                        Products
+                      </Nav.Link>
+                      <Nav.Link
+                        as={NavLink}
+                        to="/Newsevent"
+                        activeClassName="active-nav-link"
+                      >
+                        News & Events
                       </Nav.Link>
                       <Nav.Link
                         as={NavLink}
@@ -240,80 +127,13 @@ const NavbarComponent = () => {
                       >
                         Contact Us
                       </Nav.Link>
-                      <Nav.Link
-                        as={NavLink}
-                        to="/cs"
-                        activeClassName="active-nav-link"
-                      >
-                        Blog
-                      </Nav.Link>
-                      <Nav.Link
-                        as={NavLink}
-                        to="/cs"
-                        activeClassName="active-nav-link"
-                      >
-                        Language
-                      </Nav.Link>
 
-                      <Dropdown
-                        className="hero-dropdown"
-                        drop="up"
-                        show={showDropdown}
-                      >
-                        <Dropdown.Toggle
-                          variant="link"
-                          className="nav-link"
-                          onClick={handleDropdownClick}
-                        >
-                          All Categories
-                        </Dropdown.Toggle>
+                      {/* Use the AllCategoriesDropdown component with dropDirection="up" in the hero section */}
 
-                        <Dropdown.Menu className="hero-dropdown-menu">
-                          <div className="custom-dropdown-content">
-                            <div className="hero-dropdown-column hero-images-column">
-                              {activeCategory &&
-                                categories[activeCategory].images.map(
-                                  (image, index) => (
-                                    <img
-                                      key={index}
-                                      src={image}
-                                      alt={`Image ${index + 1}`}
-                                      className="hero-dropdown-image"
-                                    />
-                                  )
-                                )}
-                            </div>
-
-                            <div className="hero-dropdown-column hero-items-column">
-                              {activeCategory &&
-                                categories[activeCategory].items.map(
-                                  (item, index) => (
-                                    <div
-                                      key={index}
-                                      className="hero-dropdown-item"
-                                    >
-                                      {item}
-                                    </div>
-                                  )
-                                )}
-                            </div>
-
-                            <div className="hero-dropdown-column hero-title-column">
-                              {Object.keys(categories).map((title) => (
-                                <div
-                                  key={title}
-                                  className={`hero-dropdown-title ${
-                                    activeCategory === title ? "active" : ""
-                                  }`}
-                                  onMouseEnter={() => handleCategoryHover(title)}
-                                >
-                                  {title}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </Dropdown.Menu>
-                      </Dropdown>
+                      <AllCategoriesDropdown
+                        dropDirection="up"
+                        className="hero-dropdown-upward"
+                      />
                     </Nav>
                   </div>
                 </Container>
@@ -335,7 +155,7 @@ const NavbarComponent = () => {
                   <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     onClick={handleToggleClick}
-                    className="ml-auto d-lg-none"
+                    className="ms-auto d-lg-none"
                   />
                   <div className="d-none d-lg-flex">{stickyNavLinks}</div>
                 </Container>
@@ -346,7 +166,9 @@ const NavbarComponent = () => {
       )}
 
       {/* Show NavPopup only on mobile */}
-      {isMobile && <NavPopup show={showPopup} handleClose={() => setShowPopup(false)} />}
+      {isMobile && (
+        <NavPopup show={showPopup} handleClose={() => setShowPopup(false)} />
+      )}
     </>
   );
 };

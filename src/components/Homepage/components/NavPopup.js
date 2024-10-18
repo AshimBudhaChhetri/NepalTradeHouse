@@ -2,7 +2,7 @@ import React from "react";
 import { Modal } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
-import "./NavPopup.css"; // Create a new CSS file for styling
+import "./NavPopupUnique.css"; // Change the CSS file name for uniqueness
 
 const NavPopup = ({ show, handleClose }) => {
   return (
@@ -11,24 +11,47 @@ const NavPopup = ({ show, handleClose }) => {
         <Modal.Title>Menu</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Nav className="flex-column nav-popup">
-          <Nav.Link as={NavLink} to="/" exact activeClassName="active-nav-link" onClick={handleClose}>
+        <Nav className="flex-column nav-popup-unique">
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            exact
+            activeClassName="active-nav-link-unique"
+            onClick={handleClose}
+          >
             Home
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/cs" activeClassName="active-nav-link" onClick={handleClose}>
+          <Nav.Link
+            as={NavLink}
+            to="/aboutpage"
+            activeClassName="active-nav-link-unique"
+            onClick={handleClose}
+          >
             About Us
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/gallery" activeClassName="active-nav-link" onClick={handleClose}>
-            Our Gallery
+          <Nav.Link
+            as={NavLink}
+            to="/gallery"
+            activeClassName="active-nav-link-unique"
+            onClick={handleClose}
+          >
+            Products
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/contact" activeClassName="active-nav-link" onClick={handleClose}>
+          <Nav.Link
+            as={NavLink}
+            to="/contact"
+            activeClassName="active-nav-link-unique"
+            onClick={handleClose}
+          >
             Contact Us
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/cs" activeClassName="active-nav-link" onClick={handleClose}>
-            Blog
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/cs" activeClassName="active-nav-link" onClick={handleClose}>
-            Language
+          <Nav.Link
+            as={NavLink}
+            to="/newsevent"
+            activeClassName="active-nav-link-unique"
+            onClick={handleClose}
+          >
+            News & Event
           </Nav.Link>
         </Nav>
       </Modal.Body>

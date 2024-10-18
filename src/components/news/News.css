@@ -1,0 +1,563 @@
+.main-outer-news-container {
+  margin-top: 85px;
+  padding-top: 25px;
+}
+
+.main-outer-card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-bookmark {
+  position: fixed;
+  width: 170px;
+  top: 20%;
+  left: 0px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.title-div-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title-part-news-subtext {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-part-news {
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  color: #004fab;
+}
+
+.news-card {
+  height: 270px;
+  width: 1000px;
+  margin-left: 0px;
+  background-color: white;
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-card .row.g-0 {
+  display: flex;
+  align-items: center;
+}
+
+.news-card .img-fluid {
+  height: 270px;
+  object-fit: cover;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.news-card .card-body {
+  padding: 1.5rem;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.news-meta .badge {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.news-meta .text-muted {
+  display: flex;
+  align-items: center;
+  font-size: 0.999rem;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.news-meta .text-muted i {
+  margin-right: 4px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: black;
+  font-family: "Quicksand", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.btn-link {
+  color: #da2140;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  color: #c51a33;
+  text-decoration: none;
+}
+
+/* Custom Modal Styling */
+.news-modal-custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.news-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1500px;
+  max-height: 600px;
+  position: relative;
+}
+
+.news-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.news-modal-body-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.news-modal-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.news-modal-image img {
+  margin-top: 50px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.news-modal-details {
+  flex: 2;
+}
+
+.news-modal-details p {
+  margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #333;
+}
+
+.news-modal-date {
+  text-align: left;
+}
+
+.news-modal-category {
+  text-align: left;
+}
+
+.news-modal-description {
+  padding-top: 30px;
+  text-align: left;
+}
+
+.news-modal-title {
+  padding-bottom: 30px;
+  font-family: "Yeseva One", cursive;
+}
+
+.div-visit-more {
+  padding-top: 20px;
+  text-decoration: none;
+  width: max-content;
+}
+
+.visit-link {
+  text-decoration: none;
+  font-size: 19px;
+  color: red;
+}
+
+/* From Uiverse.io by RoninLJY */
+
+.loading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.loader {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  animation: loading-rotate 3s linear infinite;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.item:nth-of-type(1) {
+  background-color: #cd2d10;
+  border-radius: 20px 20px 0 20px;
+  border-left: #ffffff 4px solid;
+  border-top: #f7f7f7 4px solid;
+}
+
+.item:nth-of-type(2) {
+  background-color: #cd2d10;
+  border-radius: 20px 20px 20px 0;
+  border-right: #ffffff 4px solid;
+  border-top: #f7f7f7 4px solid;
+}
+
+.item:nth-of-type(3) {
+  background-color: rgb(46, 55, 130);
+  border-radius: 20px 0 20px 20px;
+  border-left: #ffffff 4px solid;
+  border-bottom: #f7f7f7 4px solid;
+}
+
+.item:nth-of-type(4) {
+  background-color: rgb(46, 55, 130);
+  border-radius: 0 20px 20px 20px;
+  border-right: #ffffff 4px solid;
+  border-bottom: #f7f7f7 4px solid;
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+
+  20% {
+    transform: scale(1) rotate(72deg);
+  }
+
+  40% {
+    transform: scale(0.5) rotate(144deg);
+  }
+
+  60% {
+    transform: scale(0.5) rotate(216deg);
+  }
+
+  80% {
+    transform: scale(1) rotate(288deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 308px) and (max-width: 432px) and (orientation: portrait) {
+  .main-outer-news-container {
+    margin-top: 85px;
+    padding-top: 25px;
+  }
+
+  .main-outer-card-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-bookmark {
+    display: none;
+    position: fixed;
+    width: 170px;
+    top: 27%;
+    left: 0px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .title-div-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .title-part-news-subtext {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .title-part-news {
+    font-family: "Yeseva One", cursive;
+    font-size: 40px;
+    color: #004fab;
+  }
+
+  .news-card {
+    height: auto;
+    width: 400px;
+    margin-left: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-card .row.g-0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-card .img-fluid {
+    height: 270px;
+    object-fit: cover;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  .news-card .card-body {
+    padding: 1.5rem;
+  }
+
+  .news-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .news-meta .badge {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .news-meta .text-muted {
+    display: flex;
+    align-items: center;
+    font-size: 0.999rem;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .news-meta .text-muted i {
+    margin-right: 4px;
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: black;
+    font-family: "Quicksand", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .card-text {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .btn-link {
+    color: #da2140;
+    font-weight: bold;
+  }
+
+  .btn-link:hover {
+    color: #c51a33;
+    text-decoration: none;
+  }
+
+  /* Custom Modal Styling */
+  .news-modal-custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+
+  .news-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1500px;
+    max-height: 900px;
+    position: relative;
+  }
+
+  .news-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .news-modal-body-content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .news-modal-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .news-modal-image img {
+    margin-top: 50px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .news-modal-details {
+    flex: 2;
+  }
+
+  .news-modal-details p {
+    margin-bottom: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #333;
+    font-size: 12px;
+    overflow-y: scroll;
+  }
+
+  .news-modal-date {
+    text-align: left;
+  }
+
+  .news-modal-category {
+    text-align: left;
+  }
+
+  .news-modal-description {
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  .news-modal-title {
+    padding-bottom: 30px;
+    font-family: "Yeseva One", cursive;
+    font-size: 20px;
+  }
+
+  .div-visit-more {
+    padding-top: 20px;
+    text-decoration: none;
+    width: max-content;
+  }
+
+  .visit-link {
+    text-decoration: none;
+    font-size: 19px;
+    color: red;
+  }
+}
+/* 
+ipad air */
+@media only screen and (min-device-width: 818px) and (max-device-width: 824px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .news-card {
+    height: max-content;
+    width: auto;
+    margin-left: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1500px;
+    max-height: max-content;
+    position: relative;
+  }
+}
+
+/* ipad pro */
+
+@media only screen and (min-width: 834px) and (max-width: 1024px) and (orientation: portrait) {
+  .news-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1500px;
+    max-height: max-content;
+    position: relative;
+  }
+}
+/* 
+ipad mini */
+@media only screen and (min-width: 765px) and (max-width: 770px) and (orientation: portrait) {
+  .news-card {
+    height: max-content;
+    width: auto;
+    margin-left: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .news-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1500px;
+    max-height: max-content;
+    position: relative;
+  }
+}

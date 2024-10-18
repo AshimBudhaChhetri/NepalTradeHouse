@@ -1,202 +1,107 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Spices.css";
-import logospices from "../../../centurylogo.png";
-import spicesbg from "../../../spicesbg.jpg";
-import iceimg from "../../../nepaliceprod.png";
-import icecan from "../../../cannepalice.png"
+import logokhuk from "../../../logokhuk.png";
+import rumbg from "../../../rumbg1.jpg";
+import whiterum from "../../../whiterum.png";
+import redkhuk from "../../../redkhuk.png";
+import spicedkhuk from "../../../rumprod.png";
+import corkhuk from "../../../corkhuk.png";
 import bgrandomice from '../../../icebg.png';
-import greenice from "../../../greennepalice.png";
-import whiteice from "../../../premnepalice.png";
-import orangeice from "../../../orangeice.png";
-import orangecan from "../../../orangecan.png";
 
-const Spices = () => {
+// Array of product data
+const khukriProducts = [
+  {
+    id: 1,
+    title: "KHUKRI WHITE RUM",
+    category: "Rum",
+    country: "Nepal",
+    alcohol: "40%",
+    description: "Khukri White is a complex yet light white rum, presenting delicate notes of tropical fruits with rich nutty undertones and a creamy character. This makes Khukri White Rum perfect for sipping neat or mixing in cocktails.",
+    image: whiterum,
+    order: 'normal',
+  },
+  {
+    id: 2,
+    title: "KHUKRI XXX RUM",
+    category: "Rum",
+    country: "Nepal",
+    alcohol: "40%",
+    description: "Born in the Himalayas, Khukri XXX Rum is an exceptional dark blend, distilled with rich molasses, Himalayan spring water, and natural artisanal flavours. Every sip delivers a complex taste with rich natural flavours and a smooth, long caramel finish.",
+    image: redkhuk,
+    order: 'reversed',
+  },
+  {
+    id: 3,
+    title: "KHUKRI SPICED RUM",
+    category: "Rum",
+    country: "Nepal",
+    alcohol: "42.8%",
+    description: "Flavours extracted from authentic Nepalese spices are blended with molasses and fresh spring water from the Himalayas. Aged in wooden casks at high altitudes, Khukri Spiced Rum delivers a sweet, smooth, and long finish.",
+    image: spicedkhuk,
+    order: 'normal',
+  },
+  {
+    id: 4,
+    title: "KHUKRI CORONATION",
+    category: "Rum",
+    country: "Nepal",
+    alcohol: "42.8%",
+    description: "Created in honour of King Birendra's coronation, Coronation Khukri is packed in a unique bottle shaped like a Khukri, Nepal's national symbol. Every bottle is a reminder of Nepal's rich heritage.",
+    image: corkhuk,
+    order: 'reversed',
+  },
+ 
+];
+
+const Khukri = () => {
   const [scrolled, setScrolled] = useState(false);
 
-
-
   return (
-    <div className={`spices-content ${scrolled ? "scrolled" : ""}`}>
+    <div className={`khukri-content ${scrolled ? "scrolled" : ""}`}>
       <div className="container-fluid">
-        <div className="row no-gutters-spices">
-          <div
-            className={`col-md-4 ${
-              scrolled ? "full-width-logo" : "content-text-spices"
-            }`}
-          >
-            <div className="image-logo-div-spices">
-              <img
-                src={logospices}
-                className="image-logo-spices"
-                alt="Spices Logo"
-              />
+        {/* Logo and introduction */}
+        <div className="row no-gutters-khukri">
+          <div className={`col-md-4 ${scrolled ? "full-width-logo" : "content-text-khukri"}`}>
+            <div className="image-logo-div-khukri">
+              <img src={logokhuk} className="image-logo-khukri" alt="Khukri Logo" />
             </div>
-            
-              <p>
-                Century Garam Masala is a pack of traditional spice blend used in everyday cooking. Century Garam Masala adds aroma and flavor to any dish, to raise its taste exponentially. Century's perfect mixes of herbs and spices to make your cuisine more special.
-
-
-Century Group of Companies’ extensive portfolio comprises of Dugar Spices & Food Products Pvt. Ltd., National Polymer & Chemical Industries, Asia Chem Pvt. Ltd., National Pipe Industry, Amit Enterprises, New Saurav Impex, Asian Life Insurance Co. Ltd., Hotel Harrison Palace Pvt. Ltd., Fun & Food Village Resort and Centurian Hotel (RAMADA) & Malls Pvt. Ltd. 
-Century Group is a firm advocate of sustainable growth and is committed to its role as a responsible corporate conglomerate. At the heart of our success are the communities in which we live and work, and we are ever eager to give back to them through different Corporate Social Responsibility initiatives.
-
-Our vision is not only to grow our business ethically but also to consistently work towards satisfying our valued customers, whether it is through our products or our services.
-Century is driven by a constant zeal of coming up with new and exciting products that help us stay at the top. Maintaining brand trust and loyalty is our primary objective as we continue to deliver only the best.
-              </p>
-       
+            <p>
+              Nepal Distilleries Private Limited started producing Khukri Rum in 1959 in Kathmandu, Nepal. Initially, the company started distilling alcohol from pot stills. Distilled from fermented molasses, the Khukri Rum is aged for a minimum of eight months in wooden vats. 
+              Khukri Rum comes in four varieties; Khukri XXX Rum, Coronation Khukri XXX Rum, Khukri White Rum, and Khukri Spiced Rum, all with alcohol content of 42.8%. Every sip delivers a complex taste with rich natural flavours, earthy undertones, and a smooth caramel finish.
+            </p>
           </div>
-       
-            <div className="col-md-8 img-kolom">
-              <img src={spicesbg} className="spices-bg" alt="Background" />
-            </div>
-         
-
-       
-          
+          <div className="col-md-8 p-0 img-kolom">
+            <img src={rumbg} className="khukri-bg" alt="Background" />
+          </div>
         </div>
-    
-        
-       
-       
-          <div>
-            <div className="col-md-12">
-              <div className="card-style-1 first-card ">
-                <div className="card-left">
-                  <h1 className="card-title-prod">NEPAL ICE NATURA</h1>
-                  <p className="card-category">Category: Beer / Domestic Beer</p>
-                  <p className="card-category">Country: Nepal</p>
-                  <p className="card-category">Alcohol: 5%</p>
-                  <p className="card-text-prod">
-                  Nepal Ice Natura is the Nepal's first barley beer made from 100% Natural Barley. This type of barley beer is manufactured by few selected World Class Companies in the world and CG Brewery has joined this elite club to offer Nepalese Consumers unique experience of drinking this type of beer which makes use of Natural Barley.
-                  Being a product which is made from Natural Barley, Nepal Ice Natura beer has unique pleasant taste and mouth feel.
-                  </p>
-                  <Link to="/productshowcase?category=cen">
-                  <button className="button-Wwp">
-                    <span className="Wwp-span">Shop Now</span>
-                  </button>
-                  </Link>
-                </div>
-                <div className="card-right">
-                  <div className="img-div-card-spices">
-                    <img
-                      src={icecan}
-                      className="spicescan-prod-img-card"
-                      alt="Product"
-                    />
-                    <img
-                      src={greenice}
-                      className="spices-prod-img-card"
-                      alt="Product"
-                    />
-                    <img
-                      src={bgrandomice}
-                      className="bg-random-spices"
-                      alt="Product"
-                    />
-                    
-                    
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-     
 
-          <div>
-            <div className="col-md-12">
-              <div className="card-style-1 ">
-                <div className="card-right">
-                <div className="img-div-card-spices">
-                    <img
-                      src={whiteice}
-                      className="spicescan-prod-img-card"
-                      alt="Product"
-                    />
-                    <img
-                      src={iceimg}
-                      className="spices-prod-img-card"
-                      alt="Product"
-                    />
-                      <img
-                      src={bgrandomice}
-                      className="bg-random-spices2"
-                      alt="Product"
-                    />
-                    
-                    
-                    
-                    
-                  </div>
-                </div>
-                <div className="card-left">
-                  <h1 className="card-title-prod">NEPAL ICE PREMIUM</h1>
-                  <p className="card-category">Category: Beer / Doemstic Beer</p>
-                  <p className="card-category">Country: Nepal</p>
-                  <p className="card-category">Alcohol: 5%</p>
-                  <p className="card-text-prod">
-                    Nepal Ice Natura is the Nepal's first barley beer made from 100% Natural Barley. This type of barley beer is manufactured by few selected World Class Companies in the world and CG Brewery has joined this elite club to offer Nepalese Consumers unique experience of drinking this type of beer which makes use of Natural Barley.
-                    Being a product which is made from Natural Barley, Nepal Ice Natura beer has unique pleasant taste and mouth feel.
-                  </p>
-                  <Link to="/productshowcase?category=cen">
-                  <button className="button-Wwp">
-                    <span className="Wwp-span">Shop Now</span>
-                  </button>
-                  </Link>
-                </div>
+        {/* Product Cards */}
+        {khukriProducts.map((product) => (
+          <div key={product.id} className={`row card-container-khukri ${product.order === 'reversed' ? 'flex-row-reverse' : ''}`}>
+            <div className="col-md-9 card-desc-khukri">
+              <h1 className="card-title-prod">{product.title}</h1>
+              <p className="card-category">Category: {product.category}</p>
+              <p className="card-category">Country: {product.country}</p>
+              <p className="card-category">Alcohol: {product.alcohol}</p>
+              <p className="card-text-prod">{product.description}</p>
+              <img src={bgrandomice} className="bg-random-khukri" alt="Background" />
+              <Link to="/productshowcase?category=rum">
+                <button className="button-gallery">
+                  <span className="Wwp-span">Shop Now</span>
+                </button>
+              </Link>
+            </div>
+            <div className="col-md-3">
+              <div className="product-img-div">
+                <img src={product.image} className="khukri-prod-img-card" alt="Product" />
               </div>
             </div>
           </div>
-     
-      
-          <div>
-            <div className="col-md-12">
-              <div className="card-style-1 ">
-                <div className="card-left">
-                  <h1 className="card-title-prod">NEPAL ICE STRONG</h1>
-                  <p className="card-category">Category: Rum</p>
-                  <p className="card-category">Country: Nepal</p>
-                  <p className="card-category">Alcohol: 40%</p>
-                  <p className="card-text-prod">
-                  Nepal Ice Natura is the Nepal's first barley beer made from 100% Natural Barley. This type of barley beer is manufactured by few selected World Class Companies in the world and CG Brewery has joined this elite club to offer Nepalese Consumers unique experience of drinking this type of beer which makes use of Natural Barley.
-
-Being a product which is made from Natural Barley, Nepal Ice Natura beer has unique pleasant taste and mouth feel.
-                  </p>
-                  <Link to="/productshowcase?category=cen">
-                  <button className="button-Wwp">
-                    <span className="Wwp-span">Shop Now</span>
-                  </button>
-                  </Link>
-                </div>
-                <div className="card-right">
-                <div className="img-div-card-spices">
-                    <img
-                      src={orangecan}
-                      className="spicescan-prod-img-card"
-                      alt="Product"
-                    />
-                    <img
-                      src={orangeice}
-                      className="spices-prod-img-card"
-                      alt="Product"
-                    />
-                    <img
-                      src={bgrandomice}
-                      className="bg-random-spices3"
-                      alt="Product"
-                    />
-                    
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-   
-        
+        ))}
       </div>
     </div>
   );
 };
 
-export default Spices;
+export default Khukri;

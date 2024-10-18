@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
 .footer {
-  
   background-color: #be1f3a;
   color: #ffffff;
 }
 
 .footer-logo {
-
   height: 100px;
-
 }
 
 .footer-logo-img {
@@ -18,8 +14,6 @@
   width: 200px;
   height: 200px;
   filter: invert(300%);
-  
-
 }
 
 .footer-company-name,
@@ -70,14 +64,12 @@
 .footer-useful-links {
   font-size: 19px;
   color: #ffffff;
-
 }
 
 .footer-useful-links a {
   color: #ffffff;
   text-decoration: none;
   margin: 0 5px;
-  
 }
 
 .footer-useful-links a:hover {

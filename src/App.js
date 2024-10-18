@@ -13,6 +13,7 @@ import ProductShowcase from "./components/Gallery/components/listing/ProductShow
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
 import Aboutpage from "./components/Aboutpage/Aboutpage";
+import NewsEvent from "./components/news/News";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cs" element={<Cs />} />
           <Route path="/aboutpage" element={<Aboutpage />} />
+          <Route path="/newsevent" element={<NewsEvent />} />
         </Routes>
         <Footer />
       </div>
